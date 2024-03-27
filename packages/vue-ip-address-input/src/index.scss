@@ -1,0 +1,22 @@
+.ip-input-container {
+  width: 146px;
+  display: flex;
+  border: 1px solid #dcdfe6;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.ip-input-container:focus-within {
+  outline: none;
+  border-color: #409eff;
+}
+.ip-input {
+  width: 30px;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: #fff;
+  text-align: center;
+}
