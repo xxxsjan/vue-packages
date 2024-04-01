@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./dist/index.umd.js"></script>
+    <script src="./src/TimeStorage.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const { useWatermark, useSuperMouse } = usefulUtils;
+      useSuperMouse();
+      // Watermark-----------------
+      useWatermark({
+        id: 'app',
+        text: '水印',
+      });
+      // 使用TimeStorage-----------------------------
+      const storage = new TimeStorage();
+      storage.set({
+        key: 'test',
+        value: { test1: 1, test2: 2 },
+        cb: (data) => {
+          console.log('cb', data);
+        },
+        hours: 7,
+      });
+      const testData = storage.get('test');
+      console.log(testData);
+      const removeData = storage.remove('test');
+      console.log(removeData);
+    </script>
+  </body>
+</html>
