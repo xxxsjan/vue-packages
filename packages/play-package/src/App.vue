@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import PageOne from "./pages/screen-container.vue";
+import PageOne from "./pages/autoscaling-container.vue";
 
 const ipVal = ref("192.168.1.1");
 

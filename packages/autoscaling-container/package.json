@@ -1,7 +1,7 @@
 {
-  "name": "screen-container",
+  "name": "autoscaling-container",
   "version": "1.0.0",
-  "description": "full-screen-container",
+  "description": "autoscaling-container",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
@@ -10,9 +10,12 @@
   },
   "type": "module",
   "main": "dist/lib.cjs.js",
-  "module": "dist/lib.es.js",
   "browser": "dist/lib.umd.js",
   "unpkg": "dist/lib.umd.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./dist/lib.cjs.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

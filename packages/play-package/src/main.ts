@@ -3,11 +3,12 @@ import "./style.css";
 import App from "./App.vue";
 
 import IpInput from "vue-ip-address-input";
-import ScreenContainer from "screen-container";
+import AutoScalingContainer from "autoscaling-container";
+console.log("AutoScalingContainer: ", AutoScalingContainer);
 
 const app = createApp(App);
 
 app.use(IpInput);
-app.use(ScreenContainer);
+app.use(AutoScalingContainer);
 
 app.mount("#app");

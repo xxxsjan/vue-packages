@@ -8,68 +8,7 @@ importers:
 
   .: {}
 
-  packages/js-utils:
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.18.0
-        version: 7.24.3
-      '@babel/preset-env':
-        specifier: ^7.18.0
-        version: 7.24.3(@babel/core@7.24.3)
-      rimraf:
-        specifier: ^3.0.2
-        version: 3.0.2
-      rollup:
-        specifier: ^2.15.0
-        version: 2.79.1
-      rollup-plugin-babel:
-        specifier: ^4.4.0
-        version: 4.4.0(@babel/core@7.24.3)(rollup@2.79.1)
-      rollup-plugin-json:
-        specifier: ^4.0.0
-        version: 4.0.0
-      rollup-plugin-livereload:
-        specifier: ^2.0.5
-        version: 2.0.5
-      rollup-plugin-node-resolve:
-        specifier: ^5.2.0
-        version: 5.2.0(rollup@2.79.1)
-      rollup-plugin-serve:
-        specifier: ^1.1.0
-        version: 1.1.1
-      rollup-plugin-uglify:
-        specifier: ^5.0.2
-        version: 5.0.2(rollup@2.79.1)
-
-  packages/play-package:
-    dependencies:
-      dayjs:
-        specifier: ^1.11.8
-        version: 1.11.10
-      screen-container:
-        specifier: workspace:^
-        version: link:../screen-container
-      vue:
-        specifier: ^3.2.47
-        version: 3.4.21(typescript@5.4.3)
-      vue-ip-address-input:
-        specifier: workspace:^
-        version: link:../vue-ip-address-input
-    devDependencies:
-      '@vitejs/plugin-vue':
-        specifier: ^4.1.0
-        version: 4.6.2(vite@4.5.3)(vue@3.4.21)
-      typescript:
-        specifier: ^5.0.2
-        version: 5.4.3
-      vite:
-        specifier: ^4.3.9
-        version: 4.5.3
-      vue-tsc:
-        specifier: ^1.4.2
-        version: 1.8.27(typescript@5.4.3)
-
-  packages/screen-container:
+  packages/autoscaling-container:
     dependencies:
       element-resize-detector:
         specifier: ^1.2.4
@@ -111,6 +50,67 @@ importers:
       rollup-plugin-vue:
         specifier: ^6.0.0
         version: 6.0.0(@vue/compiler-sfc@3.4.21)
+
+  packages/js-utils:
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.18.0
+        version: 7.24.3
+      '@babel/preset-env':
+        specifier: ^7.18.0
+        version: 7.24.3(@babel/core@7.24.3)
+      rimraf:
+        specifier: ^3.0.2
+        version: 3.0.2
+      rollup:
+        specifier: ^2.15.0
+        version: 2.79.1
+      rollup-plugin-babel:
+        specifier: ^4.4.0
+        version: 4.4.0(@babel/core@7.24.3)(rollup@2.79.1)
+      rollup-plugin-json:
+        specifier: ^4.0.0
+        version: 4.0.0
+      rollup-plugin-livereload:
+        specifier: ^2.0.5
+        version: 2.0.5
+      rollup-plugin-node-resolve:
+        specifier: ^5.2.0
+        version: 5.2.0(rollup@2.79.1)
+      rollup-plugin-serve:
+        specifier: ^1.1.0
+        version: 1.1.1
+      rollup-plugin-uglify:
+        specifier: ^5.0.2
+        version: 5.0.2(rollup@2.79.1)
+
+  packages/play-package:
+    dependencies:
+      autoscaling-container:
+        specifier: workspace:^
+        version: link:../autoscaling-container
+      dayjs:
+        specifier: ^1.11.8
+        version: 1.11.10
+      vue:
+        specifier: ^3.2.47
+        version: 3.4.21(typescript@5.4.3)
+      vue-ip-address-input:
+        specifier: workspace:^
+        version: link:../vue-ip-address-input
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^4.1.0
+        version: 4.6.2(vite@4.5.3)(vue@3.4.21)
+      typescript:
+        specifier: ^5.0.2
+        version: 5.4.3
+      vite:
+        specifier: ^4.3.9
+        version: 4.5.3
+      vue-tsc:
+        specifier: ^1.4.2
+        version: 1.8.27(typescript@5.4.3)
 
   packages/test-utils:
     dependencies:

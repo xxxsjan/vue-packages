@@ -1,8 +1,8 @@
-import ScreenContainer from "./screen-container.vue";
+import AutoScalingContainer from "./autoscaling-container.vue";
 
 const plugin = {
   install(app) {
-    app.component("screen-container", ScreenContainer);
+    app.component("AutoScalingContainer", AutoScalingContainer);
   },
 };
 
