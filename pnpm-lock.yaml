@@ -46,6 +46,9 @@ importers:
       dayjs:
         specifier: ^1.11.8
         version: 1.11.10
+      screen-container:
+        specifier: workspace:^
+        version: link:../screen-container
       vue:
         specifier: ^3.2.47
         version: 3.4.21(typescript@5.4.3)

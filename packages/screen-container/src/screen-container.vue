@@ -31,6 +31,10 @@ export default {
       type: Number,
       default: 1080,
     },
+    aspectRatio: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
@@ -60,9 +64,16 @@ export default {
 
     setScale() {
       if (this.$refs.screenRef) {
-        this.$refs.screenRef.style.transform = `scale(${
-          window.innerWidth / this._width
-        },${window.innerHeight / this._height})`;
+        if (this.aspectRatio) {
+          const ratio = this.aspectRatio ? this._width / this._height : 1;
+
+          const w = window.innerWidth / this._width;
+          this.$refs.screenRef.style.transform = `scale(${w})`;
+        } else {
+          this.$refs.screenRef.style.transform = `scale(${
+            window.innerWidth / this._width
+          },${window.innerHeight / this._height})`;
+        }
       }
     },
     async sizeInit() {
@@ -75,11 +86,12 @@ export default {
         strategy: "scroll",
       });
       const handler = debounce(() => {
-        if (this.$refs.screenRef) {
-          this.$refs.screenRef.style.transform = `scale(${
-            window.innerWidth / this._width
-          },${window.innerHeight / this._height})`;
-        }
+        // if (this.$refs.screenRef) {
+        //   this.$refs.screenRef.style.transform = `scale(${
+        //     window.innerWidth / this._width
+        //   },${window.innerHeight / this._height})`;
+        // }
+        this.setScale();
       });
       this.erd.listenTo(document.body, handler);
     },

@@ -1,7 +1,7 @@
 {
   "name": "screen-container",
   "version": "1.0.0",
-  "description": "",
+  "description": "full-screen-container",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
