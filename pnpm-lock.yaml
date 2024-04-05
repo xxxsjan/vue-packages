@@ -92,6 +92,9 @@ importers:
       dayjs:
         specifier: ^1.11.8
         version: 1.11.10
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
       vue:
         specifier: ^3.2.47
         version: 3.4.21(typescript@5.4.3)
@@ -102,12 +105,15 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^4.1.0
         version: 4.6.2(vite@4.5.3)(vue@3.4.21)
+      sass:
+        specifier: ^1.74.1
+        version: 1.74.1
       typescript:
         specifier: ^5.0.2
         version: 5.4.3
       vite:
         specifier: ^4.3.9
-        version: 4.5.3
+        version: 4.5.3(sass@1.74.1)
       vue-tsc:
         specifier: ^1.4.2
         version: 1.8.27(typescript@5.4.3)
@@ -1858,7 +1864,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.3
+      vite: 4.5.3(sass@1.74.1)
       vue: 3.4.21(typescript@5.4.3)
     dev: true
 
@@ -3056,6 +3062,10 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==, tarball: https://registry.npmmirror.com/graceful-fs/-/graceful-fs-4.2.11.tgz}
     dev: true
 
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==, tarball: https://registry.npmmirror.com/gsap/-/gsap-3.12.5.tgz}
+    dev: false
+
   /has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==, tarball: https://registry.npmmirror.com/has-flag/-/has-flag-3.0.0.tgz}
     engines: {node: '>=4'}
@@ -3094,6 +3104,10 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.38
+    dev: true
+
+  /immutable@4.3.5:
+    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==, tarball: https://registry.npmmirror.com/immutable/-/immutable-4.3.5.tgz}
     dev: true
 
   /import-cwd@3.0.0:
@@ -4158,6 +4172,16 @@ packages:
     resolution: {integrity: sha512-6pNbSMW6OhAi9j+N8V+U715yBQsaWJ7eyEUaOrawX+isg5ZxhUlV1NipNtgaKHmFGiABwt+ZF04Ii+3Xjkg+8w==, tarball: https://registry.npmmirror.com/safe-identifier/-/safe-identifier-0.4.2.tgz}
     dev: true
 
+  /sass@1.74.1:
+    resolution: {integrity: sha512-w0Z9p/rWZWelb88ISOLyvqTWGmtmu2QJICqDBGyNnfG4OUnPX9BBjjYIXUpXCMOOg5MQWNpqzt876la1fsTvUA==, tarball: https://registry.npmmirror.com/sass/-/sass-1.74.1.tgz}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.5
+      source-map-js: 1.2.0
+    dev: true
+
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==, tarball: https://registry.npmmirror.com/semver/-/semver-6.3.1.tgz}
     hasBin: true
@@ -4414,7 +4438,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vite@4.5.3:
+  /vite@4.5.3(sass@1.74.1):
     resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==, tarball: https://registry.npmmirror.com/vite/-/vite-4.5.3.tgz}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4445,6 +4469,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.38
       rollup: 3.29.4
+      sass: 1.74.1
     optionalDependencies:
       fsevents: 2.3.3
     dev: true

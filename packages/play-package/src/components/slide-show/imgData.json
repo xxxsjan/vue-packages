@@ -1,0 +1,598 @@
+{
+  "mondstadt": {
+    "charList": [
+      {
+        "title": "琴",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718344593599.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/b51565c6f1298e534e90b6e63332e9c1_6618231443033589469.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/6d512d56ac7ee8181b6fecb8b53c8941_8592363746895730807.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620142281505.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620142687125.png",
+        "intro": "\\u003Cp\\u003E身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安宁。虽然并非天赋异禀，但通过刻苦训练，如今的她已然能够独当一面。\\u003Cbr /\\u003E\\n当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准备，誓要守护蒙德。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620144979413.png"
+      },
+      {
+        "title": "安柏",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718350213870.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/6f0ef40157e95b0d59455c12f4d3f270_3262958961633311108.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/4f598572016e3177da5d4256fe9c1f5e_1557744442867799468.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620153436780.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620153999417.png",
+        "intro": "\\u003Cp\\u003E活泼率直的少女，是蒙德城中唯一的侦察骑士。\\u003Cbr /\\u003E\\n擅长使用风之翼的安柏，连续三年蝉联蒙德城的「飞行冠军」。\\u003Cbr /\\u003E\\n作为西风骑士团的新星，今天的安柏依然活跃在第一线。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620175786767.png"
+      },
+      {
+        "title": "丽莎",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617000181697.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/43922f5162840c215638affedad0459a_154157936806604489.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620191955240.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620183862811.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620184031492.png",
+        "intro": "\\u003Cp\\u003E她是钟情于睡眠的知性魔女。\\u003Cbr /\\u003E\\n作为西风骑士团图书馆的管理员，聪明的丽莎总能以最有效的方式将遇到的问题统统解决。\\u003Cbr /\\u003E\\n虽然看似慵懒，但处变不惊的她似乎早已将一切尽数掌控。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200119/2020011915082946935.png"
+      },
+      {
+        "title": "凯亚",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617001674227.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/cbce61ef1ee5586c4e77b2070348685f_2873159962263599144.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620202827248.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620194979094.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620195334987.png",
+        "intro": "\\u003Cp\\u003E在西风骑士团里，凯亚是代理团长最信任的副手。凡是交托于他的任务，总能得到解决。\\u003Cbr /\\u003E\\n在蒙德城中，风趣幽默的他同样深受人们的喜爱，然而这位谈吐不凡的骑士隐约有着什么不为人知的秘密。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620201283479.png"
+      },
+      {
+        "title": "芭芭拉",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617005720579.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/6c009f0631eb71e697c2da76b608a51e_1586187959203635452.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200611/2020061121101514554.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620221565877.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620221929362.png",
+        "intro": "\\u003Cp\\u003E既是西风教会的祈礼牧师，又是蒙德城的闪耀偶像。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E对于习惯了传统吟游诗人的蒙德来说，「偶像」是还不习惯的新生事物。但在蒙德，人人都爱芭芭拉。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E这就是自由之都的自由精神&mdash;&mdash;对大家投来的喜爱，芭芭拉是这样满怀感激地总结的。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20191009/2019100911552684340.png"
+      },
+      {
+        "title": "迪卢克",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617015669833.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/f5ae62eff2cf426e98626c882dd0cf0d_3491810425996357724.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200611/2020061121141739986.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620243557115.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620243999665.png",
+        "intro": "\\u003Cp\\u003E身为蒙德城第一富豪，风度翩翩的迪卢克总是以完美的贵公子形象示人。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E然而他真实的一面，是秉承坚定信念的战士，他那「不惜一切守护蒙德」的意志犹如火焰般炽热，令他能以恐怖的攻势，毫不留情地将一切敌人击溃。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20191009/2019100911542271463.png"
+      },
+      {
+        "title": "雷泽",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617025961375.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/a1594317bbd0cefeb7da501f9879375b_6718910479380394402.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20191018/2019101817221458178.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20191018/2019101817251653573.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20191018/2019101817210884585.png",
+        "intro": "\\u003Cp\\u003E在蒙德坊间的传闻里，有人说他是被狼收养的弃婴，有人说他是狼灵的化身&hellip;\\u003Cbr /\\u003E\\n利爪与苍雷在飞驰，狼永远与荒野为伴。\\u003Cbr /\\u003E\\n时至今日，狼少年仍凭借他野兽般的直觉，在林间与狼群一起奔猎。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20191018/2019101817242498597.png"
+      },
+      {
+        "title": "温迪",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617031747812.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/965e940e6caafe8fbd4bf0e17653000b_7797376782783229067.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20191122/2019112214280323664.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20191122/2019112214234923416.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20191122/2019112214235848694.png",
+        "intro": "\\u003Cp\\u003E来路不明的吟游诗人，有时唱一些老掉牙的旧诗，有时又会唱出谁也没听过的新歌。\\u003Cbr /\\u003E\\n喜欢苹果和热闹的气氛，讨厌奶酪和一切黏糊糊的物质。\\u003Cbr /\\u003E\\n在引导「风」的元素力时，元素的塑形往往外显为羽毛，因为他很中意看上去轻飘飘的东西。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20191122/2019112214273791710.png"
+      },
+      {
+        "title": "可莉",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617033181769.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/16cff1c00f651f98427fc3fbab7fc855_1013342926215826750.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200103/2020010311245141767.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200103/2020010311085148050.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200103/2020010311085611631.png",
+        "intro": "\\u003Cp\\u003E西风骑士团，火花骑士！永远伴随闪光与爆炸出现！\\u003Cbr /\\u003E\\n&mdash;&mdash;然后在琴团长严厉的目光注视下默默消失。\\u003Cbr /\\u003E\\n虽然新炸药的配方，很多都是在被关禁闭的时候想出来的&hellip;&hellip;\\u003Cbr /\\u003E\\n但如果不被关禁闭的话，就更好了。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200119/2020011915033031100.png"
+      },
+      {
+        "title": "班尼特",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219222320482.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219451784892.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219451010574.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219111556279.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219132441122.png",
+        "intro": "\\u003Cp\\u003E蒙德城冒险家协会为数不多的年轻冒险家，一直被莫名的「不幸」所纠缠。\\u003Cbr /\\u003E\\n他所创立的「班尼冒险团」，在「不幸」的影响下不断有成员长期告假，目前仅有团长一人在队活动，已处于解散边缘。\\u003Cbr /\\u003E\\n但在班尼特诚恳的请求下，蒙德城冒险家协会接待员凯瑟琳小姐为他保留了「班尼冒险团」的编制，同时，也向他隐瞒了其他成员早已跳槽的事实。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219122424808.png"
+      },
+      {
+        "title": "诺艾尔",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516092797889.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/c8a5da498d29faa1c8f2e2bfb60efbd5_7098200614657426672.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200325/2020032510441020374.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516094018231.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516143099421.png",
+        "intro": "\\u003Cp\\u003E和蒙德城大多数普通年轻人一样，诺艾尔梦想着成为一名光荣的西风骑士。\\u003Cbr /\\u003E\\n尽管还没有获得骑士资格，她仍以女仆的身份在骑士团里工作，努力学习着骑士的言行礼仪。\\u003Cbr /\\u003E\\n她始终相信，只要坚持努力，总有一天能穿上那副象征荣耀的甲胄。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516291945513.png"
+      },
+      {
+        "title": "菲谢尔",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200330/2020033019074664412.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/96297a7f2679bf0dce4fb9d11120b882_7601596078607350699.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200402/2020040210431546436.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200330/2020033019083321421.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200330/2020033019515967824.png",
+        "intro": "\\u003Cp\\u003E自称「断罪之皇女」，与名为奥兹的漆黑夜鸦同行的神秘少女。\\u003Cbr /\\u003E\\n目前正以调查员身份供职于冒险家协会。\\u003Cbr /\\u003E\\n通过自己的特殊能力加上奇妙的个性，还有本人不愿意承认的努力，菲谢尔成为了冒险家协会调查员中的新星，且成功赢得了大家的认可。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200330/2020033019093719409.png"
+      },
+      {
+        "title": "砂糖",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414340926231.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/448bc697f852e5726717fa2be839eedc_208974302606516196.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414351862101.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414341918570.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414342739132.png",
+        "intro": "\\u003Cp\\u003E对世间万物抱有强烈好奇心的炼金术士，隶属于西风骑士团，是阿贝多的助手。研究方向为「生物炼金」。\\u003Cbr /\\u003E\\n她希望用炼金术改造既有的生命形态，让这个世界更加丰富多彩。\\u003Cbr /\\u003E\\n虽说改造过程中偶尔会出现一些过于奇异的产物，但总体而言，砂糖在「生物炼金」方面成就斐然。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414344986148.png"
+      },
+      {
+        "title": "莫娜",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718352334387.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/9e4203089ad086d328973adf3f6e8c7b_8128590565927659744.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/247b5054c574b0ff69b27dfe5d18101b_6470219706658571384.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814334080742.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814334425258.png",
+        "intro": "\\u003Cp\\u003E神秘的少女占星术士，声称自己是「伟大的占星术士莫娜」，拥有与名号相符的不俗实力，博学而高傲。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E尽管过着拮据、清贫的生活，但她坚决不用占卜来牟利&hellip;正是这种坚持，导致莫娜总是在为生计发愁。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814361198272.png"
+      },
+      {
+        "title": "迪奥娜",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614164694989.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/fb11c57bf9789d760d70d35ce634ebe1_992068999869731972.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614373182565.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614182351716.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614341398595.png",
+        "intro": "\\u003Cp\\u003E「猫尾酒馆」的超人气调酒师，蒙德酒业的超新星，传统势力的最大挑战者。\\u003Cbr /\\u003E\\n出身于清泉镇的猫耳猫尾少女，只要经迪奥娜之手调制过的酒类，都会变成难以想象的美味佳酿。\\u003Cbr /\\u003E\\n然而对于极度厌恶酒类的她来说，这到底是一种「祝福」还是「诅咒」呢？\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614361391256.png"
+      },
+      {
+        "title": "阿贝多",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20201216/2020121617552012082.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/f95b03a7d7370aa4f5de3ac9a5f161bc_96708841112282504.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20201216/2020121618031766016.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20201216/2020121617553166600.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20201216/2020121617553582444.png",
+        "intro": "\\u003Cp\\u003E阿贝多&mdash;&mdash;现定居蒙德的炼金术士，效力于西风骑士团。\\u003Cbr /\\u003E\\n「天才」、「白垩之子」或「调查队长」&hellip;他不怎么在意称号和名望，只专注于研究课题。\\u003Cbr /\\u003E\\n财富和人脉不是他的目标。他渴望驾驭的，是从古到今深藏于人类头脑中的无上知识。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20201216/2020121618002223690.png"
+      },
+      {
+        "title": "罗莎莉亚",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718290075546.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718284773624.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/a41b9128c686df0f18008cc8d03e2710_4920953648907851390.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20220128/2022012817502831365.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210324/2021032418480255041.png",
+        "intro": "\\u003Cp\\u003E罗莎莉亚&mdash;&mdash;蒙德城西风教会下属修女。\\u003Cbr /\\u003E\\n除了打扮哪里都不像神职人员的怪异修女。冷淡、锋利，如刀锋般锐利的女人。\\u003Cbr /\\u003E\\n行踪叵测，时常不告而别。身负着某种使命，但人们似乎并不明白她究竟代表着什么&hellip;\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210324/2021032418512999618.png"
+      },
+      {
+        "title": "优菈",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210508/2021050817091079399.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/4c4b8babc68ffedce9bd5766b60e1ae5_8781849729625946129.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/2c3a966eca931163af47670403ea8e50_572264946023993509.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210508/2021050817102294597.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210508/2021050817143354280.png",
+        "intro": "\\u003Cp\\u003E优菈&mdash;&mdash;常年在外作战的「浪花骑士」，反叛的旧贵族末裔。\\u003Cbr /\\u003E\\n生于旧日宗室，身负罪恶血脉之人，的确需要独特的处世技巧，才能在偏见的高墙下安然行走。当然，这并不妨碍她与家族决裂，作为卓越的「浪花骑士」，在外游猎蒙德的敌人，完成她那意义独特的「复仇」。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210508/2021050817102798548.png"
+      },
+      {
+        "title": "埃洛伊",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210825/2021082511163174110.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/9344fdabebf5e14d8ecaf34253d838c0_3043327248296318859.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/8ef5a843157d2bba1073f1f15e99ab88_7931588706386910573.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210825/2021082511164241801.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210825/2021082511165886347.png",
+        "intro": "\\u003Cp\\u003E来自诺拉的机敏猎手。随时能为正当之事挽弓放箭。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210825/2021082511235418739.png"
+      }
+    ]
+  },
+  "liyue": {
+    "charList": [
+      {
+        "title": "魈",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617035787693.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/930f3ce55517e3c711a962c82e4639c0_8788966481995409698.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/f39029c2d532da642a6a26e939342cfe_7668267888802841337.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200220/2020022016332869699.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200220/2020022016441018411.png",
+        "intro": "\\u003Cp\\u003E守护璃月港的「三眼五显仙人」之一，妙称「护法夜叉大将」。\\u003Cbr /\\u003E\\n虽然外表看起来是一个少年人，但一些有关他的传说，已在古卷中流传千年。\\u003Cbr /\\u003E\\n对望舒客栈中一道名为「杏仁豆腐」的菜颇为喜爱。\\u003Cbr /\\u003E\\n究其原因，是因为「杏仁豆腐」的味道，与他曾经吞噬过的「美梦」十分相似。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200220/2020022016340661411.png"
+      },
+      {
+        "title": "北斗",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617043374251.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/01d9b164e0de2611c84ccdec5b84ced8_4841535305526345122.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200227/2020022719265121338.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200227/2020022718432810701.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200227/2020022718433296200.png",
+        "intro": "\\u003Cp\\u003E「南十字」船队头领，在璃月有着相当的声望。\\u003Cbr /\\u003E\\n有人说她能开山劈海，有人说她善举剑引雷，还有人说，连可怖的冥海巨兽都不是北斗的一合之敌。\\u003Cbr /\\u003E\\n外人也许会把这些话当做夸张的玩笑，但那些曾与北斗同航的人却会说&mdash;&mdash;\\u003Cbr /\\u003E\\n「世上若真有什么冥海巨兽，那北斗一定能将它劈作两截。」\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200227/2020022718443769599.png"
+      },
+      {
+        "title": "凝光",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617042023125.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/d35a0a1d13f821fd55a6951210c672ac_8868204139408761896.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200305/2020030517210771116.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200306/2020030616151224513.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200305/2020030517195293816.png",
+        "intro": "\\u003Cp\\u003E坐拥空中宫殿，有着大量传言的璃月权贵，脸上总是挂着优雅神秘的笑容。\\u003Cbr /\\u003E\\n作为「璃月七星」中的天权星，她不仅象征着权力与律法，也代表着财富与才智。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200305/2020030517202481315.png"
+      },
+      {
+        "title": "香菱",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200316/2020031618192613355.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/1169862f9fa35734b06ce09c96dad9ae_616082062681680005.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200325/2020032510405353268.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516373339548.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516374761741.png",
+        "intro": "\\u003Cp\\u003E「万民堂」的新任大厨兼跑堂，对料理之道极具热情，最拿手的是麻辣菜肴。\\u003Cbr /\\u003E\\n年纪尚轻，但厨艺精湛，在吃虎岩的老饕之中颇有名气。\\u003Cbr /\\u003E\\n如果她要请你进行新品试吃，大可放心品尝，绝不会辜负你的期待，真的。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516384085655.png"
+      },
+      {
+        "title": "行秋",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200324/2020032419030350146.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/4569d28adb1d8fa4394b8d02886abe7a_112403989477759098.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/a8aeddaeb014bd3a5c84bbdacbe5b1b6_3054506025948051259.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200324/2020032419032328739.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200324/2020032419033772019.png",
+        "intro": "\\u003Cp\\u003E璃月港飞云商会的二少爷，自幼便以勤奋好学、待人礼貌闻名。\\u003Cbr /\\u003E\\n不过，即使是如此文雅的少年人，也有着动若脱兔的一面。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200324/2020032419052628612.png"
+      },
+      {
+        "title": "重云",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200602/2020060218324180299.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/d0accc6031019427d20d2f009169d7cd_47479893540421370.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200602/2020060218490326606.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200602/2020060218325160619.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200602/2020060218325741942.png",
+        "intro": "\\u003Cp style=\\\"text-align:justify\\\"\\u003E以璃月为中心，四处进行驱邪活动的云游方士。作为驱邪世家继承人，他自幼便有过人的绝技。然而，这种绝技并非学自师门，而是与生俱来的异能&mdash;&mdash;「纯阳之体」。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200602/2020060219243468834.png"
+      },
+      {
+        "title": "刻晴",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814015644368.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/d063646e97392638e07da24ce6b8c3cb_3567507076955258130.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814231443890.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814023090007.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814033195140.png",
+        "intro": "\\u003Cp style=\\\"text-align:justify\\\"\\u003E璃月七星之一，玉衡星。对「帝君一言而决的璃月」颇有微词&mdash;&mdash;但实际上，神挺欣赏她这样的人。\\u003C/p\\u003E\\n\\n\\u003Cp style=\\\"text-align:justify\\\"\\u003E她坚信与人类命运相关的事，应当由人类去做，而且人类一定可以做得更好。为了证明这一点，她比任何人都要努力。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814101895181.png"
+      },
+      {
+        "title": "七七",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814265912018.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814270362598.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814302930897.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814270793436.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814271020706.png",
+        "intro": "\\u003Cp\\u003E药庐「不卜庐」的采药姑娘兼学徒。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E因「仙缘」而拥有不死之身，行动时需要自己给自己下敕令。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E七七的记忆力非常差，为了保证日常生活的顺利，她随身携带着一本笔记，写有各种各样的注意事项。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E但在最不巧的那些日子里，她连「要看笔记」这件事都会忘记&hellip;&hellip;\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814275863512.png"
+      },
+      {
+        "title": "达达利亚",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110314190784136.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110317320323980.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110317320924240.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110314191828910.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110314211545553.png",
+        "intro": "\\u003Cp\\u003E达达利亚&mdash;&mdash;来自寒冰之国，心思变幻莫测的客人。\\u003Cbr /\\u003E\\n不必猜测他的想法，也无需质疑他的来意。只要记住：这副稚气未脱的外表下暗藏的，是锤炼到极致的战士之躯。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20201103/2020110314471196381.png"
+      },
+      {
+        "title": "钟离",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20201120/2020112010371210769.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/e699d7e2413ed5dfb384ee48c2b872d3_5181262111088024686.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/f9a6207d4b412504efe924c61bb7b5a0_625236384281146493.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20201120/2020112010401695507.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20201120/2020112010401114547.png",
+        "intro": "\\u003Cp\\u003E应「往生堂」邀请而来的神秘客卿。样貌俊美，举止高雅，拥有远超常人的学识。\\u003Cbr /\\u003E\\n虽说来历不明，却知礼数、晓规矩。坐镇「往生堂」，能行天地万物之典仪。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20201120/2020112010402393092.png"
+      },
+      {
+        "title": "辛焱",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20201125/2020112515344362241.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/3deca8e73a03e779087b74ebeac883cb_3347806888199291177.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20201126/2020112619435577026.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20201125/2020112515345033442.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20201125/2020112515343317524.png",
+        "intro": "\\u003Cp\\u003E在璃月港，摇滚属于新兴艺术，辛焱则是这门艺术身先士卒的践行者。\\u003Cbr /\\u003E\\n她用音乐和热情歌颂着对「成见」的反抗，想要唤醒劳于世间昏昏沉沉的灵魂。\\u003Cbr /\\u003E\\n如果有机会，请千万不要错过她的演出。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20201125/2020112515443710114.png"
+      },
+      {
+        "title": "甘雨",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210105/2021010518424084444.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/1ae0d0aaad9ee9b55652ea7ec67f0465_624394286022075834.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20210105/2021010519112686388.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210105/2021010512052311851.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210105/2021010512063814668.png",
+        "intro": "\\u003Cp\\u003E璃月七星的秘书，体内流淌着人类与仙兽的血脉。\\u003Cbr /\\u003E\\n天性优雅娴静，但仙兽「麒麟」温柔的性情与坚定毅重的工作态度毫无冲突。\\u003Cbr /\\u003E\\n毕竟，甘雨坚信自己所做的一切工作都是为了践行与帝君的契约，谋求璃月众生的最大福祉。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210105/2021010512204965250.png"
+      },
+      {
+        "title": "胡桃",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210222/2021022210584218038.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/300df2aed5060579f08d7db601d8710d_118206614584398576.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20210222/2021022211015977352.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210222/2021022210585593425.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210222/2021022211000571711.png",
+        "intro": "\\u003Cp\\u003E胡桃&mdash;&mdash;「往生堂」第七十七代堂主，掌控着璃月葬仪事务的重要人物。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E尽心尽力地为人们完成送别之仪，维护着世间阴阳平衡之道。\\u003C/p\\u003E\\n\\n\\u003Cp\\u003E除此以外还是个神奇打油诗人，诸多「杰作」被璃月人口口相传。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210223/2021022314115139379.png"
+      },
+      {
+        "title": "烟绯",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210420/2021042014093440786.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/494f7aa4668cb7fe2d6d0463e7cc835f_3323890008016600534.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/b59981536d706e05ef5d8074f813933e_6439062755366432729.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210420/2021042014110687352.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210420/2021042014111241198.png",
+        "intro": "\\u003Cp\\u003E烟绯&mdash;&mdash;身负半仙之血，能力一流的律法咨询师。\\u003Cbr /\\u003E\\n她在循途守辙与通权达变之间寻得了只属于自己的完美平衡点，凭借律法咨询师的独特身份和自成一派的经验手段，悉心守护着璃月的契约天平。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210420/2021042014122760534.png"
+      },
+      {
+        "title": "申鹤",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122118121612158.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/cb95a5b5d57165a4970d801c5dcf0435_8788044469681939890.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/1346e716a5106af1799a0689dbb447d4_8668961271770521123.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/c25737df979f37d73c297c53fddd5bc3_5302784647964025850.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122118124746963.png",
+        "intro": "\\u003Cp\\u003E虽为人类之身，却是仙家弟子。过去曾生活在远离璃月港的山野之间，以红绳缚魂，修身养性。\\u003Cbr /\\u003E\\n气质淡雅如仙人，身上似乎藏有某些秘密。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122118133854510.png"
+      },
+      {
+        "title": "云堇",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122117591771295.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/974d7a34d3cc71f74ac98e50d4b935fc_4724518145818884545.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/d6dfc43ded6b12754f21ff3e1ba27c6a_697862186718976661.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/fb00459567b82a88f90eb9e8fcecf46f_3540534411955411790.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122118001779515.png",
+        "intro": "\\u003Cp\\u003E「云翰社」现任当家，集剧作与演唱能力于一身的璃月戏曲名角。风格自成一派，雅致柔美，恰如其人。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20211221/2021122118005470256.png"
+      },
+      {
+        "title": "夜兰",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/05/18/76cfc9a21e196fd316070196c1396950_2919759828280177295.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/073932dc472fa00623cefb70a18df516_4957558339748297584.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/29/9f1afe08e9aa09ec4c63ad434f4de0d0_3592303725834218163.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/05/18/b3b3cd2732ed303a07ffe8b552ee8e55_5014866926012877940.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/05/18/b6b52488f3e37681298dceb2a928e271_5270286606701646042.png",
+        "intro": "\\u003Cp\\u003E自称供职于总务司的神秘人士，却又是总务司名录里的「不存在之人」。\\u003Cbr /\\u003E\\n神出鬼没，行踪飘忽，变幻无常，这些都是她的标志。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/05/18/30e336d03343f2c34fb0854d5cc35c28_7312368089955044179.png"
+      }
+    ]
+  },
+  "inazuma": {
+    "charList": [
+      {
+        "title": "神里绫华",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011085576262.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011090118454.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/3e70ceb4ff8af4cb953528cbe0ad978c_1194470955685479611.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011090831883.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011091174753.png",
+        "intro": "\\u003Cp\\u003E稻妻「社奉行」神里家的大小姐。端庄文雅，聪慧坚韧。\\u003Cbr /\\u003E\\n待人接物真诚又得体，深受稻妻民众爱戴，贵有「白鹭公主」之名。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011115413785.png"
+      },
+      {
+        "title": "枫原万叶",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716564818668.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/44e2d916d9c13bca863d56423004fd98_5259521148631074871.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716261057866.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716243457405.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716255560601.png",
+        "intro": "\\u003Cp\\u003E稻妻出身的浪人武士。为人谦和，个性温顺。\\u003Cbr /\\u003E\\n年轻潇洒的外表下埋藏着许多往事。看似随性，心中却有独属于自己的行事准则。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210618/2021061815474660436.png"
+      },
+      {
+        "title": "宵宫",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080210195390130.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/593e6a6d5d8836ca2ab5c27a98593e58_7195951238560837785.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/477828c8143db56cf4bf8f4794dc366a_6087046803156614604.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080210200225791.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080210203077277.png",
+        "intro": "\\u003Cp\\u003E才华横溢的烟花工匠，「长野原烟花店」的现任店主，被誉为「夏祭的女王」。\\u003Cbr /\\u003E\\n热情似火的少女。未泯的童心与匠人的执着在她身上交织出了奇妙的焰色反应。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080210194512627.png"
+      },
+      {
+        "title": "早柚",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080211352035312.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/982542a6c0e2dfb628a4f087fa6bde5d_8132053644924400342.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/495b155d1878702b72fed652e17ae61c_1629574657043634741.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080211353240707.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080211382144344.png",
+        "intro": "\\u003Cp\\u003E早柚&mdash;&mdash;隶属于秘密组织「终末番」的特别忍者，对睡眠和长高有着异乎常人的追求。\\u003Cbr /\\u003E\\n掌握一切可用于逃跑、隐蔽的忍术，以此为自己创造偷懒睡觉的机会。\\u003Cbr /\\u003E\\n如此神奇的手段，或许会有意想不到的用途。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210802/2021080218412042278.png"
+      },
+      {
+        "title": "雷电将军",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714114216212.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/fdcbc9ef8859b7077d92ae38d925e15e_7767077963502328666.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/dd1f208fdefbf57efcd4ecc2dd6db8af_5156970880804009875.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/e7378ca125c0b91b75e68f3351ca84f6_4701366233880939076.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714133446589.png",
+        "intro": "\\u003Cp\\u003E雷电将军&mdash;&mdash;此世最殊胜威怖的雷霆化身，稻妻幕府的最高主宰。\\u003Cbr /\\u003E\\n挟威权之鸣雷，逐永恒之孤道的寂灭者。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714412863291.png"
+      },
+      {
+        "title": "九条裟罗",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714514765929.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/f05d8a7e32075403340d0d2ea8e590ff_8488445000735534159.png",
+        "cover2": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081716222189501.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714515924405.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714513181361.png",
+        "intro": "\\u003Cp\\u003E天领奉行的将领。行如风，言如誓，是位魄力过人的女性。\\u003Cbr /\\u003E\\n她有着「神的笃信者」之名，将全部忠心都奉献给了雷电将军。\\u003Cbr /\\u003E\\n将军所追求的「永恒」，也是她愿意为之而战的信念。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210817/2021081714523998137.png"
+      },
+      {
+        "title": "珊瑚宫心海",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20210914/2021091414024724995.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/8ca5953fb331d71bc880496f5e8b7745_6228630778438562406.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/15/6b5d5658498d64378f6bc3a499be1061_5403578504705848667.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20210914/2021091414025755510.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20210914/2021091414033856414.png",
+        "intro": "\\u003Cp\\u003E心海是海祇岛的「现人神巫女」，也就是现任海祇岛最高领袖。\\u003Cbr /\\u003E\\n她通读兵法、擅长谋略，在军事上有着独特见解，也能将内政、外交等工作处理得井井有条。\\u003Cbr /\\u003E\\n不过，这位人们眼中深不可测的领导者，似乎也有不为人知的一面&hellip;\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20210914/2021091414100513442.png"
+      },
+      {
+        "title": "托马",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20211021/2021102110372681510.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/9d753f7cee1ed5c645340d6396c50c46_5605034033797455797.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/8c22510df84f59fbe30bc6e338ec01fc_1976556256075873353.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20211021/2021102110373773947.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20211021/2021102110380215637.png",
+        "intro": "\\u003Cp\\u003E社奉行神里家的家政官，同时也是活跃在稻妻的「地头蛇」。\\u003Cbr /\\u003E\\n为人友善又富有亲和力，不论身处何处都能轻易融入人群。\\u003Cbr /\\u003E\\n乍看似乎是个非常随性的人，实际上却很有责任感。无论对待工作或人际都有着格外认真的一面。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20211021/2021102110403853608.png"
+      },
+      {
+        "title": "荒泷一斗",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011275394620.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011275854973.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/80c603323013d50fba419fe48b049a85_7247865290932680381.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/0ee58e5ddf2f881615fe4755cb06dcce_3738411798904136379.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011290767842.png",
+        "intro": "\\u003Cp\\u003E鬼族后裔，性格豪爽热血的快意男儿。\\u003Cbr /\\u003E\\n如风一般迅猛，也如雷一般夺目。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011313791472.png"
+      },
+      {
+        "title": "五郎",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011485830826.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/33b7b5d2536416116765a3f55e47f51a_5502758593514559481.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/3484c4fab13b8c8fec8ccbeff63ec50a_2509373723443337404.png",
+        "name": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011492586683.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011493754512.png",
+        "intro": "\\u003Cp\\u003E海祇军大将。身具领兵者威严的同时，又无高位者的倨傲。&nbsp;\\u003Cbr /\\u003E\\n无论何时何地都深受部下信赖，能让人毫无负担地寄托后背与心灵。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20211130/2021113011494855773.png"
+      },
+      {
+        "title": "八重神子",
+        "icon": "https://uploadstatic.mihoyo.com/contentweb/20220208/2022020813481182336.png",
+        "cover1": "https://uploadstatic.mihoyo.com/contentweb/20220208/2022020814003845991.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/555743f86c50e014c9491740133b98d9_86760038096891571.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/ba8c8eaa70b25f3b86ad53aee06764cc_5447191703618250736.png",
+        "attr": "https://uploadstatic.mihoyo.com/contentweb/20220208/2022020813482761032.png",
+        "intro": "\\u003Cp\\u003E掌管鸣神大社的大巫女、狐之血脉的延续者、「永恒」的眷属与友人，以及，轻小说出版社「八重堂」的恐怖总编&hellip;\\u003Cbr /\\u003E\\n有着多重身份的神秘宫司，凡人们或许永远无法了解她的真面目与真心。\\u003C/p\\u003E\\n",
+        "sen": "https://uploadstatic.mihoyo.com/contentweb/20220208/2022020813493064972.png"
+      },
+      {
+        "title": "神里绫人",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/03/14/6713b70c875d723eb22c9effda407377_2979852309102536594.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/037d6fa79d3066c5bc8711187ad2f673_9069084469193280544.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/ac3c01655e5dd24fbaad117c72d48417_2563365341162300701.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/03/14/a6553a5ca7488a1e503fba7c6e12231e_2756540788796509812.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/03/14/b6b52488f3e37681298dceb2a928e271_2647146266674788865.png",
+        "intro": "\\u003Cp\\u003E社奉行神里家现任家主。总有办法以周全的手段实现自身目的。不过，鲜少有人知道他如今最在意的「目的」是什么。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/03/14/d2f9cae6a83071a33971b0bc082a3b4e_387282153639692788.png"
+      },
+      {
+        "title": "久岐忍",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/15/d9e1610f9201fd4d5e8ca93c21380485_2031480174215672233.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/ef220a612a40dc5d4d7c9136345f4967_1333316509826617245.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/e497caa0da05be3ef9ad4257397aac2b_62744459501155557.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/15/a3abcddb156ffcb9568e551e41f0eec3_3013620935829490329.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/15/bcf7d45517a8d3607fe1ba6a7646897b_2910812333129236934.png",
+        "intro": "\\u003Cp\\u003E「荒泷派」的二把手。脸上戴着一只造型别致的面铠，不苟言笑。\\u003Cbr /\\u003E\\n很少有人知道，为什么这种级别的人才会跑去混街头帮派。更没有人知道，她面铠下藏着怎样的真容。\\u003Cbr /\\u003E\\n至少大家表面上都这么说。虽然可能，知情人&hellip;也没那么少。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/06/15/16dad1a70a731f73a8a436eaaae06c7c_3274912452825282185.png"
+      },
+      {
+        "title": "鹿野院平藏",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/8cb39b11a39045288b7ef800b9c8a085_4905643200701802462.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/c20ab407d9316480290f7c690836f35c_3319365553784768994.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/ec07d3511f0ebe503e83ef645acc333c_9141249635277351000.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/77d525c58cf29c0fcd2d01e8373ee91e_5574266898505237615.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/4d328d77ee1768135594ba82c14733d8_8392255142328940606.png",
+        "intro": "\\u003Cp\\u003E天领奉行的天才少年侦探，直觉敏锐，心思巧妙。无论面对何种悬案，都能用出人意料的方式揭开真相。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/371fab1b46c91ee7c6d0456464de2568_6106736417910643312.png"
+      }
+    ]
+  },
+  "sumeru": {
+    "charList": [
+      {
+        "title": "提纳里",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/1f88bdae2e99307e68a0bbfedf6cc74f_2882938237707913291.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/19/a15445b2b2e4443398eabf3b479f49e7_8073097535789989508.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/19/b00b62e3b4f10026bfa95bc07896bbd7_518334801982746846.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/4f3f7fc8cc5fce975bfff8d552e8e7b8_7543421952558259312.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/b131cb7706e97d71ecf3d4f2965b0ff1_7476946874531800864.png",
+        "intro": "\\u003Cp\\u003E道成林的巡林官，毕业于阿弥利多学院的植物学学者。每天都过着巡查雨林、保护生态、教训笨蛋的充实生活。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/5ec15b13ccdf26bc05e6fdafdf57b0b2_3416441378250207025.png"
+      },
+      {
+        "title": "柯莱",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/3677cbc063b7ab3887ceb7f9a77287ac_1039229097287658400.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/19/2c752da0a5921583011a4ec36f83703c_8500020629476268998.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/2466e194064e0306c4290a252269593c_6971889188293824681.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/a9f6aaf7d1503afaaeb4d7fb6f943cd3_1494223600602969589.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/b131cb7706e97d71ecf3d4f2965b0ff1_1497413309138065227.png",
+        "intro": "\\u003Cp\\u003E见习巡林员，师从提纳里。学术方面较同龄人起步稍晚，目前正在努力补习各种知识。\\u003Cbr /\\u003E\\n她将性格的另一面深深掩藏在阳光善良的表象之下。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/3db4b26de99d0c2fc2814a0b17c4bc69_2359187598966442878.png"
+      },
+      {
+        "title": "多莉",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/b8a367991017a9f3c6bb445c5c8b68e6_1191967378101363412.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/9b5c8d26504c19154056175bbb7e287a_7101312865137287700.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/2cff1eeb6d74ff8e00813614cb9d7635_8159732657421056629.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/319b1076ee7ad90b45982a32d0ecf159_4541894726272894285.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/bcf7d45517a8d3607fe1ba6a7646897b_5453927992873855617.png",
+        "intro": "\\u003Cp\\u003E多莉是活跃在须弥的百货商人，最喜欢亮闪闪的摩拉。\\u003Cbr /\\u003E\\n能靠着精湛话术将手里那些许多奇特又神秘的道具卖出高价。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/dbbde8d73a3efca767dcf1e8bfb308ef_4611343251802978376.png"
+      },
+      {
+        "title": "赛诺",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/377cfb0cf754a873c864e92208e540f0_2617971490404602601.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/c4f05fb0c04afac045171c27c7d03cdc_7123941963780824423.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/e3bf32076e4144083d84320cda30dc82_7864338366856660301.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/5526f8b11315b8f80e6f0d5d256fa1c6_7184465936125073707.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/bcf7d45517a8d3607fe1ba6a7646897b_7505126853819885982.png",
+        "intro": "\\u003Cp\\u003E教令院的大风纪官，所有风纪官们的首领。拥有的独特幽默感令人印象深刻。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/680ff1549656e6e28811c05867d5c98a_7282445180815591417.png"
+      },
+      {
+        "title": "坎蒂丝",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/4199ac7c190fe49d64215345c1c04f30_767621913108456368.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/d0226e61c64dbd14f3041775ceebb59a_6490657115701128356.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/c12a433c36d75fbbf77a6e7619d86cc5_2581956761641324089.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/1083890d622815859bca9b49f0732885_556667641736553859.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/b6b52488f3e37681298dceb2a928e271_8295115578344676357.png",
+        "intro": "\\u003Cp\\u003E阿如村的守护者，为人温柔和善。在她的守护下，几乎没人能够危害阿如村。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/63e9757a334b07fbddac1331b2dfe3f6_6717030316257099920.png"
+      },
+      {
+        "title": "妮露",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/a5f2a564298709911b3ceef0289d183c_1572553848866085675.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/d978cf1ce85e372971bdcf6add639e8f_5385395843160526652.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/f1da8e801b8c23e250bb2e7d23fb49d5_4425751593938721916.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/29643aea2b918a207a9ae9b0003a95d2_335009269605068815.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/b6b52488f3e37681298dceb2a928e271_6743461734280442780.png",
+        "intro": "\\u003Cp\\u003E「祖拜尔剧场」的明星演员，舞姿娉婷，如睡莲初绽，一尘不染。\\u003Cbr /\\u003E\\n但她绝非高傲清冷之人，即便只是匆匆的旅者，也会对她纯洁质朴的笑容过目不忘。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/9179fd851688fae3571bb3cb1f36798f_3810520582637574653.png"
+      },
+      {
+        "title": "纳西妲",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/62cb7fb1815d9d05d3ece2e0d8e85c7d_8731082942818264376.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/24/fe684624008db25ac4b44ea4704f9ba0_4542359697614905341.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/27e20ed23e1c42678538e40d93a31179_481441863813731142.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/8835b77a602f449a0663bb4848356f13_831445811377098451.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/b131cb7706e97d71ecf3d4f2965b0ff1_8115740626530227211.png",
+        "intro": "\\u003Cp\\u003E「小吉祥草王」深居于净善宫内，向来不受重视，也很少被人提及。\\u003Cbr /\\u003E\\n她身负重任，哪怕目睹漆黑，经历孤独，也不曾停下脚步。\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/98ff724a249cbfb5501e83ee21db3eac_2751158622499454446.png"
+      },
+      {
+        "title": "莱依拉",
+        "icon": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/f5b95c8f39180f0bf83303c6316439c4_2737625808068154153.png",
+        "cover1": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/24/4322a175c30a3480092513ad73a8509a_5159775277770512203.png",
+        "cover2": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/9395372dd45888445540606a7a60ea1d_4153303946027929850.png",
+        "name": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/6947a01524d698bd2aa50793f148aff5_5796689203692145768.png",
+        "attr": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/26df7dfed0366db816715dd7f9a906de_3556202260158751781.png",
+        "intro": "\\u003Cp\\u003E梨多梵谛学院的学生，为学业愁黑了眼眶，总是一副睡眠不足的样子。\\u003Cbr /\\u003E\\n但无论课业多重，她总能拿出最精彩的推演，叫人不得不怀疑，她是否连做梦都在写论文？\\u003C/p\\u003E\\n",
+        "sen": "https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/98f57a9a028b7dd66d676dcc56e65a79_6941872590788393837.png"
+      }
+    ]
+  }
+}
