@@ -4,7 +4,6 @@ import App from "./App.vue";
 
 import IpInput from "vue-ip-address-input";
 import AutoScalingContainer from "autoscaling-container";
-console.log("AutoScalingContainer: ", AutoScalingContainer);
 
 const app = createApp(App);
 

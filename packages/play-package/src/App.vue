@@ -1,18 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import PageOne from "./pages/autoscaling-container.vue";
-
-const ipVal = ref("192.168.1.1");
-
-function ipChange(v: string) {
-  console.log(v);
-}
+import TestAutoScalingContainer from "./pages/autoscaling-container.vue";
+import TestIp from "./pages/test-ip-input.vue";
+import Waterfall from "./pages/test-waterfall.vue";
 </script>
 
 <template>
-  <h1>play-package</h1>
-  <ip-input v-model="ipVal" @change="ipChange" />
-  <PageOne />
+  <Waterfall />
 </template>
 
 <style scoped></style>
