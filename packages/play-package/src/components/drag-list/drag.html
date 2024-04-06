@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            * {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #container {
+                width: 400px;
+                margin: 100px auto;
+                padding-left: 17%;
+            }
+
+            .ele {
+                width: 70%;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #999;
+                background: cadetblue;
+                margin-top: 8px;
+                border-radius: 10px;
+                padding-left: 10px;
+                color: white;
+                cursor: move;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul id="container">
+            <li class="ele" draggable="true">第一名</li>
+            <li class="ele" draggable="true">第二名</li>
+            <li class="ele" draggable="true">第三名</li>
+            <li class="ele" draggable="true">第四名</li>
+        </ul>
+
+        <script>
+            var node = document.querySelector("#container")
+            var curDragEl = null
+
+            node.ondragstart = function (event) {
+                // console.log(event)
+                // event.dataTransfer.setData("text", event.target.innerText)
+                curDragEl = event.target
+            }
+
+            node.ondragover = function (event) {
+                event.preventDefault()
+                var target = event.target
+                if (target.nodeName === "LI") {
+                    if (target !== curDragEl) {
+                        if (target && target.animated) {
+                            return
+                        }
+                        var targetRect = target.getBoundingClientRect()
+
+                        var curDragElRect = curDragEl.getBoundingClientRect()
+
+
+                        // 对比索引顺序
+                        console.log(getIndex(curDragEl), getIndex(target))
+                        if (getIndex(curDragEl) < getIndex(target)) {
+                            target.parentNode.insertBefore(curDragEl, target.nextSibling)
+                        } else {
+                            target.parentNode.insertBefore(curDragEl, target)
+                        }
+                        // 更好的体验，假如动画效果设置
+                        _animate(curDragElRect, curDragEl)
+                        _animate(targetRect, target)
+                    }
+                }
+            }
+
+            function getIndex(el) {
+                var index = 0
+
+                if (!el || !el.parentNode) {
+                    return -1
+                }
+
+                while (el && (el = el.previousElementSibling)) {
+                    index++
+                }
+
+                return index
+            }
+
+            function _animate(rect, target) {
+                var ms = 300
+                if (ms) {
+                    var currentRect = target.getBoundingClientRect()
+
+                    if (rect.nodeType === 1) {
+                        rect = rect.getBoundingClientRect()
+                    }
+
+                    console.log(target.innerText, rect.top, currentRect.top)
+                    setStyle(target, "transition", "none")
+                    setStyle(target, "transform", `translate3d(0px,${rect.top - currentRect.top}px,0)`)
+
+                    target.offsetWidth
+                    setStyle(target, "transition", `all ${ms}ms`)
+                    setStyle(target, "transform", "translate3d(0,0,0)")
+
+                    target.animated && clearTimeout(target.animated)
+                    target.animated = setTimeout(function () {
+                        setStyle(target, "transition", "")
+                        setStyle(target, "transform", "")
+                        target.animated = false
+                    }, ms)
+                }
+            }
+
+            function setStyle(el, prop, val) {
+                var style = el && el.style
+
+                if (style) {
+                    if (val === void 0) {
+                        if (document.defaultView && document.defaultView.getComputedStyle) {
+                            val = document.defaultView.getComputedStyle(el, "")
+                        } else {
+                            val = el.currentStyle
+                        }
+
+                        return prop === void 0 ? val : val[prop]
+                    } else {
+                        if (!(prop in style)) {
+                            prop = "-webkit-" + prop
+                        }
+                        style[prop] = val + (typeof val === "string" ? "" : "px")
+                    }
+                }
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>
