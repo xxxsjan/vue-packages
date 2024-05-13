@@ -22,11 +22,18 @@ async function gitcheck(cwd) {
     return res;
   });
   Promise.all(promises).then((res) => {
-    res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
+    const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
     res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
+    if (unsafeDir.length > 0) {
+      console.log(`不安全仓库（${unsafeDir.length}）: `);
+      unsafeDir.map((m) => console.log(m));
+    }
     if (notCommit.length == 0) {
       console.log("已全部提交");
+    } else {
+      console.log(`未提交的项目文件夹（${notCommit.length}）: `);
+      notCommit.map((m) => console.log(m));
     }
   });
 }
@@ -96,6 +103,6 @@ cli.command("*", "Default command").action((input, options) => {
 const parsed = cli.parse();
 
 if (parsed.args.length == 0) {
-  console.log("default: ", parsed);
-  gitcheck();
+  // console.log("default: ", parsed);
+  gitcheck(path.resolve('D:\\hello-word\\front-end'));
 }

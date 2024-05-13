@@ -1,6 +1,7 @@
-import gitcheck from "./gitcheck";
+import { gitcheck } from "./gitcheck";
 import { version } from "../package.json";
 import cac from "cac";
+import path from 'path'
 
 const cli = cac();
 
@@ -32,6 +33,6 @@ cli.command("*", "Default command").action((input, options) => {
 const parsed = cli.parse();
 
 if (parsed.args.length == 0) {
-  console.log("default: ", parsed);
-  gitcheck();
+  // console.log("default: ", parsed);
+  gitcheck(path.resolve('D:\\hello-word\\front-end'));
 }

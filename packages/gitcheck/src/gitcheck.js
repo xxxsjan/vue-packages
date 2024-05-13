@@ -2,7 +2,7 @@ import path from "path";
 import { glob } from "glob";
 import { spawn } from "child_process";
 
-async function gitcheck(cwd) {
+export async function gitcheck(cwd) {
   cwd = cwd || process.cwd();
 
   const isGitDir = await glob("**/.git/", {
@@ -23,8 +23,15 @@ async function gitcheck(cwd) {
     const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
     const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
+    if (unsafeDir.length > 0) {
+      console.log(`不安全仓库（${unsafeDir.length}）: `);
+      unsafeDir.map((m) => console.log(m));
+    }
     if (notCommit.length == 0) {
       console.log("已全部提交");
+    } else {
+      console.log(`未提交的项目文件夹（${notCommit.length}）: `);
+      notCommit.map((m) => console.log(m));
     }
   });
 }
@@ -61,5 +68,3 @@ const spawn_Promise = (command, params, cwd) => {
     });
   });
 };
-
-export default gitcheck;
