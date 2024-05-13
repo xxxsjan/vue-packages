@@ -1,7 +1,7 @@
 import { gitcheck } from "./gitcheck";
 import { version } from "../package.json";
 import cac from "cac";
-import path from 'path'
+import path from "path";
 
 const cli = cac();
 
@@ -22,17 +22,22 @@ cli
     console.log("remove " + dir);
   });
 
-cli.command("hello", "Say hello").action(() => {
-  console.log("hello");
-});
-
-cli.command("*", "Default command").action((input, options) => {
-  console.log("This is the default command");
-});
-
+// cli
+//   .command("dir <dir>", "解析目录")
+//   .option("-d, --dir", "解析目录")
+//   .action((dir, options) => {
+//     console.log("dir: ", dir);
+//     const dirPath = path.resolve(dir);
+//     console.log("dirPath: ", dirPath);
+//     gitcheck(dirPath);
+//   });
 const parsed = cli.parse();
 
 if (parsed.args.length == 0) {
-  // console.log("default: ", parsed);
-  gitcheck(path.resolve('D:\\hello-word\\front-end'));
+  if (parsed.options.d) {
+    const dirPath = path.resolve(parsed.options.d);
+    gitcheck(dirPath);
+  } else {
+    gitcheck();
+  }
 }

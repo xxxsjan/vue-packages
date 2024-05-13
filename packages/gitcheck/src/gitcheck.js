@@ -1,6 +1,7 @@
 import path from "path";
 import { glob } from "glob";
 import { spawn } from "child_process";
+import pc from "picocolors";
 
 export async function gitcheck(cwd) {
   cwd = cwd || process.cwd();
@@ -10,7 +11,7 @@ export async function gitcheck(cwd) {
     ignore: "node_modules/**",
   });
   if (isGitDir.length == 0) {
-    console.log(cwd, "下，未发现git项目目录");
+    console.log(pc.yellow(cwd + "下，未发现git项目目录"));
     return;
   }
 
@@ -21,17 +22,17 @@ export async function gitcheck(cwd) {
   });
   Promise.all(promises).then((res) => {
     const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
-    const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
+    // const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
     if (unsafeDir.length > 0) {
-      console.log(`不安全仓库（${unsafeDir.length}）: `);
-      unsafeDir.map((m) => console.log(m));
+      console.log(pc.blue(`不安全仓库（${unsafeDir.length}）: `));
+      unsafeDir.map((m) => console.log(pc.yellow(m)));
     }
     if (notCommit.length == 0) {
-      console.log("已全部提交");
+      console.log(pc.green("已全部提交"));
     } else {
-      console.log(`未提交的项目文件夹（${notCommit.length}）: `);
-      notCommit.map((m) => console.log(m));
+      console.log(pc.cyan(`未提交的项目文件夹（${notCommit.length}）: `));
+      notCommit.map((m) => console.log(pc.red(m)));
     }
   });
 }

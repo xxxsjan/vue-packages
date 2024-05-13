@@ -2,6 +2,7 @@
 import path from 'path';
 import { glob } from 'glob';
 import { spawn } from 'child_process';
+import pc from 'picocolors';
 import cac from 'cac';
 
 async function gitcheck(cwd) {
@@ -12,7 +13,7 @@ async function gitcheck(cwd) {
     ignore: "node_modules/**",
   });
   if (isGitDir.length == 0) {
-    console.log(cwd, "下，未发现git项目目录");
+    console.log(pc.yellow(cwd + "下，未发现git项目目录"));
     return;
   }
 
@@ -23,17 +24,17 @@ async function gitcheck(cwd) {
   });
   Promise.all(promises).then((res) => {
     const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
-    res.filter((r) => r.finish).map((r) => r.gitDir);
+    // const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
     if (unsafeDir.length > 0) {
-      console.log(`不安全仓库（${unsafeDir.length}）: `);
-      unsafeDir.map((m) => console.log(m));
+      console.log(pc.blue(`不安全仓库（${unsafeDir.length}）: `));
+      unsafeDir.map((m) => console.log(pc.yellow(m)));
     }
     if (notCommit.length == 0) {
-      console.log("已全部提交");
+      console.log(pc.green("已全部提交"));
     } else {
-      console.log(`未提交的项目文件夹（${notCommit.length}）: `);
-      notCommit.map((m) => console.log(m));
+      console.log(pc.cyan(`未提交的项目文件夹（${notCommit.length}）: `));
+      notCommit.map((m) => console.log(pc.red(m)));
     }
   });
 }
@@ -92,17 +93,22 @@ cli
     console.log("remove " + dir);
   });
 
-cli.command("hello", "Say hello").action(() => {
-  console.log("hello");
-});
-
-cli.command("*", "Default command").action((input, options) => {
-  console.log("This is the default command");
-});
-
+// cli
+//   .command("dir <dir>", "解析目录")
+//   .option("-d, --dir", "解析目录")
+//   .action((dir, options) => {
+//     console.log("dir: ", dir);
+//     const dirPath = path.resolve(dir);
+//     console.log("dirPath: ", dirPath);
+//     gitcheck(dirPath);
+//   });
 const parsed = cli.parse();
 
 if (parsed.args.length == 0) {
-  // console.log("default: ", parsed);
-  gitcheck(path.resolve('D:\\hello-word\\front-end'));
+  if (parsed.options.d) {
+    const dirPath = path.resolve(parsed.options.d);
+    gitcheck(dirPath);
+  } else {
+    gitcheck();
+  }
 }
