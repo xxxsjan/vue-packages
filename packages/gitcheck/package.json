@@ -1,0 +1,25 @@
+{
+  "name": "gitcheck",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -w -c",
+    "build": "rollup -c",
+    "fix-permissions": "icacls .\\bin\\index.js /grant Everyone:(F)"
+  },
+  "bin": {
+    "gitcheck": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "cac": "^6.7.14",
+    "glob": "^10.3.15",
+    "minimist": "^1.2.8",
+    "rollup": "^4.17.2"
+  }
+}
