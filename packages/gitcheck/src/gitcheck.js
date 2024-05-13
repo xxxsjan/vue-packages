@@ -25,13 +25,13 @@ export async function gitcheck(cwd) {
     // const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
     if (unsafeDir.length > 0) {
-      console.log(pc.blue(`不安全仓库（${unsafeDir.length}）: `));
+      console.log(pc.bgBlue(`不安全仓库（${unsafeDir.length}）: `));
       unsafeDir.map((m) => console.log(pc.yellow(m)));
     }
     if (notCommit.length == 0) {
       console.log(pc.green("已全部提交"));
     } else {
-      console.log(pc.cyan(`未提交的项目文件夹（${notCommit.length}）: `));
+      console.log(pc.bgBlue(`未提交的项目文件夹（${notCommit.length}）: `));
       notCommit.map((m) => console.log(pc.red(m)));
     }
   });

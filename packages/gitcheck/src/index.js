@@ -9,9 +9,8 @@ cli.help();
 
 cli.version(version);
 
-// 默认option配置
-cli.option("--type <type>", "类型", {
-  default: "node",
+cli.option("-d ,--dir <dir>", "Parse folder", {
+  default: ".",
 });
 
 cli
@@ -21,23 +20,13 @@ cli
     console.log("options: ", options);
     console.log("remove " + dir);
   });
+cli
+  .command("[...files]", "files")
+  .action((files, options) => {
+    const dirPath = path.resolve(options.dir);
+    gitcheck(dirPath);
+  });
 
-// cli
-//   .command("dir <dir>", "解析目录")
-//   .option("-d, --dir", "解析目录")
-//   .action((dir, options) => {
-//     console.log("dir: ", dir);
-//     const dirPath = path.resolve(dir);
-//     console.log("dirPath: ", dirPath);
-//     gitcheck(dirPath);
-//   });
 const parsed = cli.parse();
 
-if (parsed.args.length == 0) {
-  if (parsed.options.d) {
-    const dirPath = path.resolve(parsed.options.d);
-    gitcheck(dirPath);
-  } else {
-    gitcheck();
-  }
-}
+// console.log("parsed: ", parsed);

@@ -27,13 +27,13 @@ async function gitcheck(cwd) {
     // const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
     if (unsafeDir.length > 0) {
-      console.log(pc.blue(`不安全仓库（${unsafeDir.length}）: `));
+      console.log(pc.bgBlue(`不安全仓库（${unsafeDir.length}）: `));
       unsafeDir.map((m) => console.log(pc.yellow(m)));
     }
     if (notCommit.length == 0) {
       console.log(pc.green("已全部提交"));
     } else {
-      console.log(pc.cyan(`未提交的项目文件夹（${notCommit.length}）: `));
+      console.log(pc.bgBlue(`未提交的项目文件夹（${notCommit.length}）: `));
       notCommit.map((m) => console.log(pc.red(m)));
     }
   });
@@ -80,9 +80,8 @@ cli.help();
 
 cli.version(version);
 
-// 默认option配置
-cli.option("--type <type>", "类型", {
-  default: "node",
+cli.option("-d ,--dir <dir>", "Parse folder", {
+  default: ".",
 });
 
 cli
@@ -92,23 +91,13 @@ cli
     console.log("options: ", options);
     console.log("remove " + dir);
   });
-
-// cli
-//   .command("dir <dir>", "解析目录")
-//   .option("-d, --dir", "解析目录")
-//   .action((dir, options) => {
-//     console.log("dir: ", dir);
-//     const dirPath = path.resolve(dir);
-//     console.log("dirPath: ", dirPath);
-//     gitcheck(dirPath);
-//   });
-const parsed = cli.parse();
-
-if (parsed.args.length == 0) {
-  if (parsed.options.d) {
-    const dirPath = path.resolve(parsed.options.d);
+cli
+  .command("[...files]", "files")
+  .action((files, options) => {
+    const dirPath = path.resolve(options.dir);
     gitcheck(dirPath);
-  } else {
-    gitcheck();
-  }
-}
+  });
+
+cli.parse();
+
+// console.log("parsed: ", parsed);
