@@ -3,7 +3,7 @@ import "./style.css";
 import App from "./App.vue";
 
 import IpInput from "vue-ip-address-input";
-import AutoScalingContainer from "autoscaling-container";
+import AutoScalingContainer from "vue-autoscaling-container";
 
 const app = createApp(App);
 

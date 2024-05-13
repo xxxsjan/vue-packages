@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "autoscaling-container": "workspace:^",
+    "vue-autoscaling-container": "workspace:^",
     "dayjs": "^1.11.8",
     "gsap": "^3.12.5",
     "vue": "^3.2.47",
