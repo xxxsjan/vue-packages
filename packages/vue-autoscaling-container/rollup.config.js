@@ -8,7 +8,7 @@ export default [
     input: "src/index.js",
     output: [
       {
-        file: "dist/lib.umd.js",
+        file: "dist/index.umd.js",
         format: "umd",
         name: "IpInput",
         globals: {
@@ -16,17 +16,17 @@ export default [
         },
       },
       {
-        file: "./dist/lib.es.js",
+        file: "./dist/index.es.js",
         format: "es",
       },
       {
-        file: "./dist/lib.cjs.js",
+        file: "./dist/index.cjs.js",
         format: "cjs",
       },
       {
         format: "iife",
         name: "IpInput",
-        file: "./dist/lib.iife.js",
+        file: "./dist/index.iife.js",
         globals: {
           vue: "vue",
         },

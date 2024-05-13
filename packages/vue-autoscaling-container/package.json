@@ -1,5 +1,5 @@
 {
-  "name": "autoscaling-container",
+  "name": "vue-autoscaling-container",
   "version": "1.0.0",
   "description": "autoscaling-container",
   "scripts": {
@@ -13,8 +13,10 @@
   "browser": "dist/lib.umd.js",
   "unpkg": "dist/lib.umd.js",
   "exports": {
-    "import": "./src/index.js",
-    "require": "./dist/lib.cjs.js"
+    ".": {
+      "import": "./src/index.js",
+      "require": "./dist/lib.cjs.js"
+    }
   },
   "keywords": [],
   "author": "",
