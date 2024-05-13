@@ -72,7 +72,7 @@ const spawn_Promise = (command, params, cwd) => {
   });
 };
 
-var version = "0.0.1";
+var version = "0.0.2";
 
 const cli = cac();
 
