@@ -20,11 +20,10 @@ cli
     console.log("options: ", options);
     console.log("remove " + dir);
   });
+  
 cli.command("[...files]", "files").action((files, options) => {
   const dirPath = path.resolve(options.dir);
   gitcheck(dirPath);
 });
 
 const parsed = cli.parse();
-
-// console.log("parsed: ", parsed);
