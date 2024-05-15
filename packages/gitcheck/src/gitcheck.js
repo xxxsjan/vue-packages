@@ -27,19 +27,19 @@ export async function gitcheck(cwd) {
 
     if (unsafeDir.length > 0) {
       console.log(pc.bgBlue(`不安全仓库（${unsafeDir.length}）: `));
-      unsafeDir.map((m) => console.log(pc.yellow(m)));
+      unsafeDir.map((m) => console.log(pc.red(m)));
     }
     if (notCommit.length == 0) {
       const ahead = res.filter((r) => r.ahead).map((r) => r.gitDir);
       if (ahead.length > 0) {
-        console.log(pc.green(`已提交，但未推送（${ahead.length}）：`));
-        console.log(pc.yellow(`（${ahead.length}）: `));
+        console.log(pc.bgBlue(`已提交，但未推送（${ahead.length}）：`));
+        ahead.map((m) => console.log(pc.yellow(m),));
       } else {
         console.log(pc.green("已全部提交且推送"));
       }
     } else {
       console.log(pc.bgBlue(`未提交的项目文件夹（${notCommit.length}）: `));
-      notCommit.map((m) => console.log(pc.red(m)));
+      notCommit.map((m) => console.log(pc.yellow(m)));
     }
   });
 }
