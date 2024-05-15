@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["./src/**/*"]
+}

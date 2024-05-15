@@ -1,0 +1,30 @@
+{
+  "name": "plugins",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "lib/index.module.js",
+  "module": "lib/index.module.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "rm-dist": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "package.json",
+    "lib"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@types/node": "^18.15.11",
+    "rollup": "^3.20.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}

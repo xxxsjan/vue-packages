@@ -1,0 +1,21 @@
+{
+  "name": "vite-plugin-markdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "markdown-it": "^13.0.1",
+    "vite": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  }
+}

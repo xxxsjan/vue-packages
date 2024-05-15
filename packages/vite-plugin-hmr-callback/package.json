@@ -1,0 +1,13 @@
+{
+  "name": "xjsan-vite-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxxsjan/vite-plugin-hmr-callback.git"
+  }
+}
