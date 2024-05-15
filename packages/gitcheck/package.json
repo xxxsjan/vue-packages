@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "publish": "npm publish"
+    "publish": "node ./scripts/version.js && npm publish"
   },
   "bin": {
     "gitcheck": "./bin/index.js"
@@ -24,6 +24,7 @@
     "minimist": "^1.2.8",
     "picocolors": "^1.0.0",
     "rollup": "^4.17.2",
+    "semver": "^7.6.2",
     "simple-git": "^3.24.0"
   }
 }
