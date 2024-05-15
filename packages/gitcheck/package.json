@@ -1,12 +1,12 @@
 {
   "name": "gitcheck-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "检查目录下所有git仓库的提交状态",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev && rollup -w -c",
-    "build": "cross-env NODE_ENV=prod && rollup -c",
+    "dev": "rollup -w -c",
+    "build": "rollup -c",
     "publish": "npm run build && npm publish"
   },
   "bin": {
@@ -20,7 +20,6 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-terser": "^0.4.4",
     "cac": "^6.7.14",
-    "cross-env": "^7.0.3",
     "glob": "^10.3.15",
     "minimist": "^1.2.8",
     "picocolors": "^1.0.0",

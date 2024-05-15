@@ -1,6 +1,6 @@
+import pc from "picocolors";
 import path from "path";
 import { glob } from "glob";
-import pc from "picocolors";
 import { simpleGit } from "simple-git";
 
 export async function gitcheck(cwd) {
