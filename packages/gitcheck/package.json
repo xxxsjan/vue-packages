@@ -1,13 +1,13 @@
 {
   "name": "gitcheck-cli",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "检查目录下所有git仓库的提交状态",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "publish": "node ./scripts/version.js && npm publish"
+    "version": "node ./scripts/version.js"
   },
   "bin": {
     "gitcheck": "./bin/index.js"
