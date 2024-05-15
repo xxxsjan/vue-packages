@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "version": "node ./scripts/version.js"
+    "publish": "node ./scripts/publish.js"
   },
   "bin": {
     "gitcheck": "./bin/index.js"

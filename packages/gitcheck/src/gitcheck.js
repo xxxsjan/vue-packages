@@ -33,7 +33,7 @@ export async function gitcheck(cwd) {
       const ahead = res.filter((r) => r.ahead).map((r) => r.gitDir);
       if (ahead.length > 0) {
         console.log(pc.bgBlue(`已提交，但未推送（${ahead.length}）：`));
-        ahead.map((m) => console.log(pc.yellow(m),));
+        ahead.map((m) => console.log(pc.yellow(m)));
       } else {
         console.log(pc.green("已全部提交且推送"));
       }
@@ -82,29 +82,3 @@ async function gitStatusRaw(dirPath) {
     notCommit: res.includes("git add <file>"),
   };
 }
-
-const spawn_Promise = (command, params, cwd) => {
-  return new Promise((resolve, reject) => {
-    let stdout = "";
-    let stderr = "";
-    var spawnObj = spawn(command, params, {
-      encoding: "utf-8",
-      cwd: cwd,
-    });
-    spawnObj.stdout.on("data", function (data) {
-      // console.log("stdout: ", data.toString());
-      stdout += data.toString();
-    });
-    spawnObj.stderr.on("data", function (err) {
-      // console.log("stderr: ", err.toString());
-      stderr += err.toString();
-    });
-    // spawnObj.on("close", function (code) {
-    // console.log("close code : " + code);
-    // });
-    spawnObj.on("exit", (code) => {
-      // console.log("exit code : " + code);
-      resolve();
-    });
-  });
-};
