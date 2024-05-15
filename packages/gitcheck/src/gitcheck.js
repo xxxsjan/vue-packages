@@ -30,14 +30,20 @@ export async function gitcheck(cwd) {
       unsafeDir.map((m) => console.log(pc.yellow(m)));
     }
     if (notCommit.length == 0) {
-      console.log(pc.green("已全部提交"));
+      const ahead = res.filter((r) => r.ahead).map((r) => r.gitDir);
+      if (ahead.length > 0) {
+        console.log(pc.green(`已提交，但未推送（${ahead.length}）：`));
+        console.log(pc.yellow(`（${ahead.length}）: `));
+      } else {
+        console.log(pc.green("已全部提交且推送"));
+      }
     } else {
       console.log(pc.bgBlue(`未提交的项目文件夹（${notCommit.length}）: `));
       notCommit.map((m) => console.log(pc.red(m)));
     }
   });
 }
-async function gitStatus(dirPath) {
+export async function gitStatus(dirPath) {
   const git = simpleGit(dirPath, { binary: "git" });
 
   const res = await git
@@ -45,6 +51,7 @@ async function gitStatus(dirPath) {
     .then((res) => {
       // not_added + modified = files
       return {
+        ahead: res.ahead,
         gitDir: dirPath,
         unsafeDir: false,
         finish: res.files.length == 0,
