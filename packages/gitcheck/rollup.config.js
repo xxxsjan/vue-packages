@@ -1,5 +1,10 @@
 import json from "@rollup/plugin-json";
+import terser from "@rollup/plugin-terser";
+import commonjs from "@rollup/plugin-commonjs";
 
+console.log("NODE_ENV", process.env.NODE_ENV);
+
+/** @type {import('rollup').RollupOptions} */
 const defaultConfig = {
   input: "./src/index.js",
   output: {
@@ -9,7 +14,15 @@ const defaultConfig = {
     // sourcemap: true, // 是否生成sourcemap, 默认为false
     // globals, // 外部依赖,
   },
-  plugins: [json()],
+  plugins: [
+    commonjs(),
+    json(),
+    // terser({
+    //   compress: {
+    //     drop_console: true,
+    //   },
+    // }),
+  ],
 };
 
 export default defaultConfig;

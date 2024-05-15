@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import path from 'path';
 import { glob } from 'glob';
-import { spawn } from 'child_process';
 import pc from 'picocolors';
+import { simpleGit } from 'simple-git';
 import cac from 'cac';
 
 async function gitcheck(cwd) {
@@ -19,13 +19,14 @@ async function gitcheck(cwd) {
 
   const promises = isGitDir.map(async (p) => {
     const dirPath = path.resolve(cwd, p, "..");
-    const res = await spawn_Promise(`git`, [`status`], dirPath);
+
+    const res = await gitStatus(dirPath);
     return res;
   });
   Promise.all(promises).then((res) => {
     const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
-    // const finish = res.filter((r) => r.finish).map((r) => r.gitDir);
     const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
+
     if (unsafeDir.length > 0) {
       console.log(pc.bgBlue(`不安全仓库（${unsafeDir.length}）: `));
       unsafeDir.map((m) => console.log(pc.yellow(m)));
@@ -38,41 +39,31 @@ async function gitcheck(cwd) {
     }
   });
 }
+async function gitStatus(dirPath) {
+  const git = simpleGit(dirPath, { binary: "git" });
 
-const spawn_Promise = (command, params, cwd) => {
-  return new Promise((resolve, reject) => {
-    let stdout = "";
-    let stderr = "";
-    var spawnObj = spawn(command, params, {
-      encoding: "utf-8",
-      cwd: cwd,
+  const res = await git
+    .status()
+    .then((res) => {
+      // not_added + modified = files
+      return {
+        gitDir: dirPath,
+        unsafeDir: false,
+        finish: res.files.length == 0,
+        notCommit: res.files.length > 0,
+      };
+    })
+    .catch((err) => {
+      return {
+        gitDir: dirPath,
+        unsafeDir: err.message.includes("config --global --add safe.directory"),
+      };
     });
-    spawnObj.stdout.on("data", function (data) {
-      // console.log("stdout: ", data.toString());
-      stdout += data.toString();
-    });
-    spawnObj.stderr.on("data", function (err) {
-      // console.log("stderr: ", err.toString());
-      stderr += err.toString();
-    });
-    // spawnObj.on("close", function (code) {
-    // console.log("close code : " + code);
-    // });
-    spawnObj.on("exit", (code) => {
-      // console.log("exit code : " + code);
-      resolve({
-        stdout,
-        stderr,
-        gitDir: cwd,
-        unsafeDir: stderr.includes("config --global --add safe.directory"),
-        finish: stdout.includes("nothing to commit"),
-        notCommit: stdout.includes("git add <file>"),
-      });
-    });
-  });
-};
 
-var version = "0.0.2";
+  return res;
+}
+
+var version = "0.0.3";
 
 const cli = cac();
 
@@ -91,12 +82,10 @@ cli
     console.log("options: ", options);
     console.log("remove " + dir);
   });
-cli
-  .command("[...files]", "files")
-  .action((files, options) => {
-    const dirPath = path.resolve(options.dir);
-    gitcheck(dirPath);
-  });
+cli.command("[...files]", "files").action((files, options) => {
+  const dirPath = path.resolve(options.dir);
+  gitcheck(dirPath);
+});
 
 cli.parse();
 

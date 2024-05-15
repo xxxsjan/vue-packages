@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "rollup -w -c",
-    "build": "rollup -c"
+    "dev": "cross-env NODE_ENV=dev && rollup -w -c",
+    "build": "cross-env NODE_ENV=prod && rollup -c",
+    "publish": "npm run build && npm publish"
   },
   "bin": {
     "gitcheck": "./bin/index.js"
@@ -15,11 +16,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
     "cac": "^6.7.14",
+    "cross-env": "^7.0.3",
     "glob": "^10.3.15",
     "minimist": "^1.2.8",
     "picocolors": "^1.0.0",
-    "rollup": "^4.17.2"
+    "rollup": "^4.17.2",
+    "simple-git": "^3.24.0"
   }
 }
