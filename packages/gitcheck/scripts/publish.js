@@ -5,7 +5,11 @@ import pc from "picocolors";
 main();
 async function main() {
   // updateVersion()
-  await spawn_Promise("npm", ["publish"], process.cwd());
+  await spawn_Promise(
+    "npm",
+    ["publish", "--registry", "https://registry.npmjs.org"],
+    process.cwd()
+  );
 }
 
 function spawn_Promise(command, params, cwd) {
