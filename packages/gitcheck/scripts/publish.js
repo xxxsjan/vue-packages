@@ -20,13 +20,18 @@ function spawn_Promise(command, params, cwd) {
     });
     spawnObj.stdout.on("data", function (data) {
       stdout += data.toString();
-      console.log(pc.green(stdout));
     });
     spawnObj.stderr.on("data", function (err) {
       stderr += err.toString();
-      console.log(pc.red(stderr));
     });
-    spawnObj.on("close", function (code) {});
+    spawnObj.on("close", function (code) {
+      if (stderr) {
+        console.log(pc.red(stderr));
+      }
+      if (stdout) {
+        console.log(pc.green(stdout));
+      }
+    });
     spawnObj.on("exit", (code) => {
       resolve(code);
     });

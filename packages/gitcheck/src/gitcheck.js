@@ -14,7 +14,7 @@ export async function gitcheck(cwd) {
     ignore: "node_modules/**",
   });
   if (isGitDir.length == 0) {
-    console.log(pc.yellow(cwd + "下，未发现git项目目录"));
+    spinner.succeed(pc.green("分析完成! " + cwd + "下，未发现git项目"));
     return;
   }
 
