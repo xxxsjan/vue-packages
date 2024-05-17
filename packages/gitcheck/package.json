@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "update:version": "node ./scripts/version.js",
+    "version:beta": "node ./scripts/version.js --beta",
+    "version": "node ./scripts/version.js",
     "publ": "node ./scripts/publish.js"
   },
   "bin": {

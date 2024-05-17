@@ -37,3 +37,5 @@ function spawn_Promise(command, params, cwd) {
     });
   });
 }
+
+// npm unpublish gitcheck-cli@0.0.9 --registry https://registry.npmjs.org

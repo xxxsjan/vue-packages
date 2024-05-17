@@ -2,11 +2,14 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { inc } from "semver";
+import parseArgs from "minimist";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-updateVersion()
+const argv = parseArgs(process.argv.slice(2));
+
+updateVersion();
 
 export function updateVersion() {
   const pkgData = fs.readFileSync(path.resolve(__dirname, "../package.json"));
@@ -15,13 +18,15 @@ export function updateVersion() {
 
   // "major" | "premajor" | "minor" | "preminor" | "patch" | "prepatch" | "prerelease";
 
-  // const nextVersion = inc(version, "patch");
-  const nextVersion = inc(version, "prerelease", "beta", "1");
+  const nextVersion = argv.beta
+    ? inc(version, "prerelease", "beta", "1")
+    : inc(version, "patch");
 
   pkgJson.version = nextVersion;
+  console.log("nextVersion: ", nextVersion);
 
-  fs.writeFileSync(
-    path.resolve(__dirname, "../package.json"),
-    JSON.stringify(pkgJson, null, 2)
-  );
+  // fs.writeFileSync(
+  //   path.resolve(__dirname, "../package.json"),
+  //   JSON.stringify(pkgJson, null, 2)
+  // );
 }
