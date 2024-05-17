@@ -1,6 +1,6 @@
 {
   "name": "gitcheck-cli",
-  "version": "0.0.10-beta.3",
+  "version": "0.0.9-beta.1",
   "description": "检查目录下所有git仓库的提交状态",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,6 @@
     "dev": "rollup -w -c",
     "build": "rollup -c",
     "version:beta": "node ./scripts/version.js --beta",
-    "version": "node ./scripts/version.js",
     "publ": "node ./scripts/publish.js"
   },
   "bin": {

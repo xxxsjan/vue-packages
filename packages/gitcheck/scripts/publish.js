@@ -25,11 +25,12 @@ function spawn_Promise(command, params, cwd) {
       stderr += err.toString();
     });
     spawnObj.on("close", function (code) {
-      if (stderr) {
-        console.log(pc.red(stderr));
-      }
       if (stdout) {
         console.log(pc.green(stdout));
+      } else {
+        if (stderr) {
+          console.log(pc.red(stderr));
+        }
       }
     });
     spawnObj.on("exit", (code) => {
@@ -38,4 +39,4 @@ function spawn_Promise(command, params, cwd) {
   });
 }
 
-// npm unpublish gitcheck-cli@0.0.9 --registry https://registry.npmjs.org
+// npm unpublish gitcheck-cli@0.0.10-beta.4 --registry https://registry.npmjs.org

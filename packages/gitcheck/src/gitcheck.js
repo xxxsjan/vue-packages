@@ -14,7 +14,7 @@ export async function gitcheck(cwd) {
     ignore: "node_modules/**",
   });
   if (isGitDir.length == 0) {
-    spinner.succeed(pc.green("分析完成! " + cwd + "下，未发现git项目"));
+    spinner.succeed(pc.green(`分析完成! 未发现git项目(${pc.italic(cwd)})`));
     return;
   }
 
@@ -27,31 +27,52 @@ export async function gitcheck(cwd) {
   Promise.all(promises)
     .then((res) => {
       const unsafeDir = res.filter((r) => r.unsafeDir).map((r) => r.gitDir);
-      const notCommit = res.filter((r) => r.notCommit).map((r) => r.gitDir);
-      const staged = res.filter((r) => r.staged).map((r) => r.gitDir);
 
-      spinner.succeed(pc.green("分析完成"));
+      const stagedList = res.filter((r) => r.staged).map((r) => r.gitDir);
+
+      const not_addedList = res
+        .filter((r) => r.not_added && !r.staged)
+        .map((r) => r.gitDir);
+      const aheadList = res.filter((r) => r.ahead).map((r) => r.gitDir);
+
+      spinner.succeed(
+        pc.green(`${pc.bold("目录分析完成")} (${pc.italic(cwd)})`)
+      );
 
       if (unsafeDir.length > 0) {
-        console.log(pc.bgBlue(`不安全仓库（${unsafeDir.length}）: `));
-        unsafeDir.map((m) => console.log(pc.red(m)));
+        console.log(
+          pc.bgBlue(`🚀 insecure directory（${unsafeDir.length}）: `)
+        );
+        unsafeDir.map((m) => console.log(pc.italic(pc.red(m))));
+      }
+      if (not_addedList.length > 0) {
+        console.log(
+          pc.bgBlue(`🚀 add ❌ commit ❌ push ❌ （${not_addedList.length}）: `)
+        );
+        not_addedList.map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
-      if (staged.length > 0) {
-        console.log(pc.bgBlue(`已暂存，但未推送（${staged.length}）：`));
-        staged.map((m) => console.log(pc.yellow(m)));
-      } else {
-        if (notCommit.length > 0) {
-          console.log(pc.bgBlue(`未提交的项目文件夹（${notCommit.length}）: `));
-          notCommit.map((m) => console.log(pc.yellow(m)));
-        } else {
-          const ahead = res.filter((r) => r.ahead).map((r) => r.gitDir);
-          if (ahead.length > 0) {
-            ahead.map((m) => console.log(pc.yellow(m)));
-          } else {
-            console.log(pc.green("已全部提交且推送"));
-          }
-        }
+      if (stagedList.length > 0) {
+        console.log(
+          pc.bgBlue(`🚀 add ✅ commit ❌ push ❌ （${stagedList.length}）：`)
+        );
+        stagedList.map((m) => console.log(pc.italic(pc.yellow(m))));
+      }
+
+      if (aheadList.length > 0) {
+        console.log(
+          pc.bgBlue(`🚀 add ✅ commit ✅ push ❌（${aheadList.length}）: `)
+        );
+        aheadList.map((m) => console.log(pc.italic(pc.yellow(m))));
+      }
+
+      if (
+        unsafeDir.length === 0 &&
+        not_addedList.length === 0 &&
+        stagedList.length === 0 &&
+        aheadList.length === 0
+      ) {
+        console.log(pc.green("✅ 已全部提交且推送"));
       }
     })
     .catch((err) => {
@@ -65,17 +86,17 @@ export async function gitStatus(dirPath) {
   const res = await git
     .status()
     .then((res) => {
-      console.log("res: ", dirPath, res);
-      // not_added 修改未暂存
-      // files 改动文件
-      // staged 暂存文件
+      // if (res.staged.length) {
+      //   console.log(dirPath, res);
+      // }
       return {
         ahead: res.ahead,
         gitDir: dirPath,
         unsafeDir: false,
-        finish: res.files.length == 0,
-        notCommit: res.files.length > 0,
+
         staged: res.staged.length > 0,
+        not_added: res.not_added.length > 0,
+        modified: res.modified.length > 0,
       };
     })
     .catch((err) => {
@@ -99,6 +120,6 @@ async function gitStatusRaw(dirPath) {
     gitDir: dirPath,
     unsafeDir: res.includes("config --global --add safe.directory"),
     finish: res.includes("nothing to commit"),
-    notCommit: res.includes("git add <file>"),
+    isNotCommit: res.includes("git add <file>"),
   };
 }
