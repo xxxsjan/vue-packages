@@ -46,23 +46,19 @@ export async function gitcheck(cwd) {
         unsafeDir.map((m) => console.log(pc.italic(pc.red(m))));
       }
       if (not_addedList.length > 0) {
-        console.log(
-          pc.bgBlue(`🚀 add ❌ commit ❌ push ❌ （${not_addedList.length}）: `)
-        );
+        logTitle(undefined, undefined, undefined, not_addedList.length);
+
         not_addedList.map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
       if (stagedList.length > 0) {
-        console.log(
-          pc.bgBlue(`🚀 add ✅ commit ❌ push ❌ （${stagedList.length}）：`)
-        );
+        logTitle("add", undefined, undefined, stagedList.length);
+
         stagedList.map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
       if (aheadList.length > 0) {
-        console.log(
-          pc.bgBlue(`🚀 add ✅ commit ✅ push ❌（${aheadList.length}）: `)
-        );
+        logTitle("add", "commit", undefined, aheadList.length);
         aheadList.map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
@@ -122,4 +118,15 @@ async function gitStatusRaw(dirPath) {
     finish: res.includes("nothing to commit"),
     isNotCommit: res.includes("git add <file>"),
   };
+}
+
+function logTitle(add, commit, push, count = 0) {
+  const status = (key) => (key ? "✅" : "❌");
+  console.log(
+    pc.bgBlue(
+      `🚀 add${status(add)} commit${status(commit)} push${status(
+        push
+      )}（${count}）: `
+    )
+  );
 }
