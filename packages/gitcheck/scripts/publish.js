@@ -1,10 +1,8 @@
-import { updateVersion } from "./version.js";
 import { spawn } from "child_process";
 import pc from "picocolors";
 
 main();
 async function main() {
-  // updateVersion()
   await spawn_Promise(
     "npm",
     ["publish", "--registry", "https://registry.npmjs.org"],

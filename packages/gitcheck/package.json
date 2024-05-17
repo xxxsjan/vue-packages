@@ -1,6 +1,6 @@
 {
   "name": "gitcheck-cli",
-  "version": "0.0.9",
+  "version": "0.0.10-beta.2",
   "description": "检查目录下所有git仓库的提交状态",
   "main": "index.js",
   "type": "module",
@@ -22,6 +22,7 @@
     "cac": "^6.7.14",
     "glob": "^10.3.15",
     "minimist": "^1.2.8",
+    "ora": "^8.0.1",
     "picocolors": "^1.0.0",
     "rollup": "^4.17.2",
     "semver": "^7.6.2",

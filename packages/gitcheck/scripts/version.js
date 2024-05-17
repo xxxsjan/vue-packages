@@ -13,7 +13,8 @@ export function updateVersion() {
 
   // "major" | "premajor" | "minor" | "preminor" | "patch" | "prepatch" | "prerelease";
 
-  const nextVersion = inc(version, "patch");
+  // const nextVersion = inc(version, "patch");
+  const nextVersion = inc(version, "prerelease", "beta", "1");
 
   pkgJson.version = nextVersion;
 
