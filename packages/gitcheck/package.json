@@ -1,6 +1,6 @@
 {
   "name": "gitcheck-cli",
-  "version": "0.0.9-beta.1",
+  "version": "0.0.9-beta.2",
   "description": "检查目录下所有git仓库的提交状态",
   "main": "index.js",
   "type": "module",

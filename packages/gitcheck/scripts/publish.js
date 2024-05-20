@@ -27,6 +27,7 @@ function spawn_Promise(command, params, cwd) {
     spawnObj.on("close", function (code) {
       if (stdout) {
         console.log(pc.green(stdout));
+        console.log(pc.green("✔ 发布成功"));
       } else {
         if (stderr) {
           console.log(pc.red(stderr));
