@@ -43,23 +43,23 @@ export async function gitcheck(cwd) {
         console.log(
           pc.bgBlue(`🚀 insecure directory（${unsafeDir.length}）: `)
         );
-        unsafeDir.map((m) => console.log(pc.italic(pc.red(m))));
+        unsafeDir.sort().map((m) => console.log(pc.italic(pc.red(m))));
       }
       if (not_addedList.length > 0) {
         logTitle(undefined, undefined, undefined, not_addedList.length);
 
-        not_addedList.map((m) => console.log(pc.italic(pc.yellow(m))));
+        not_addedList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
       if (stagedList.length > 0) {
         logTitle("add", undefined, undefined, stagedList.length);
 
-        stagedList.map((m) => console.log(pc.italic(pc.yellow(m))));
+        stagedList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
       if (aheadList.length > 0) {
         logTitle("add", "commit", undefined, aheadList.length);
-        aheadList.map((m) => console.log(pc.italic(pc.yellow(m))));
+        aheadList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
       }
 
       if (

@@ -5,6 +5,7 @@ import { inc } from "semver";
 import parseArgs from "minimist";
 import { exec } from "child_process";
 import pc from "picocolors";
+import prompts from "prompts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -44,8 +45,17 @@ export async function updateVersion() {
 
   console.log(pc.green(`Version updated to ${nextVersion}`));
 
-  fs.writeFileSync(
-    path.resolve(__dirname, "../package.json"),
-    JSON.stringify(pkgJson, null, 2)
-  );
+  const response = await prompts({
+    type: "confirm",
+    name: "confirmation",
+    message: `确认修改版本号：${remoteVersion}-->${nextVersion}`,
+  });
+  console.log(response);
+  if (response.confirmation) {
+    fs.writeFileSync(
+      path.resolve(__dirname, "../package.json"),
+      JSON.stringify(pkgJson, null, 2)
+    );
+    console.log(pc.green(`✔ Version updated to ${nextVersion}`));
+  }
 }

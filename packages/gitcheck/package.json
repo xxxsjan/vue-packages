@@ -25,6 +25,7 @@
     "minimist": "^1.2.8",
     "ora": "^8.0.1",
     "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
     "rollup": "^4.17.2",
     "semver": "^7.6.2",
     "simple-git": "^3.24.0"
