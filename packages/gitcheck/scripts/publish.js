@@ -3,11 +3,19 @@ import pc from "picocolors";
 
 main();
 async function main() {
+  await spawn_Promise("npm", ["run", "build"], process.cwd());
+  console.log(pc.green("✔ 打包成功"));
   await spawn_Promise(
     "npm",
     ["publish", "--registry", "https://registry.npmjs.org"],
     process.cwd()
-  );
+  )
+    .then(() => {
+      console.log(pc.green("✔ 发布成功"));
+    })
+    .catch((err) => {
+      console.log(pc.red(err));
+    });
 }
 
 function spawn_Promise(command, params, cwd) {
@@ -26,16 +34,13 @@ function spawn_Promise(command, params, cwd) {
     });
     spawnObj.on("close", function (code) {
       if (stdout) {
-        console.log(pc.green(stdout));
-        console.log(pc.green("✔ 发布成功"));
+        resolve(stdout);
       } else {
         if (stderr) {
-          console.log(pc.red(stderr));
+          reject(stderr);
         }
       }
     });
-    spawnObj.on("exit", (code) => {
-      resolve(code);
-    });
+    // spawnObj.on("exit", (code) => {});
   });
 }

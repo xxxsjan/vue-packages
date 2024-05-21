@@ -50,7 +50,7 @@ export async function updateVersion() {
     name: "confirmation",
     message: `确认修改版本号：${remoteVersion}-->${nextVersion}`,
   });
-  console.log(response);
+
   if (response.confirmation) {
     fs.writeFileSync(
       path.resolve(__dirname, "../package.json"),
