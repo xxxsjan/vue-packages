@@ -49,6 +49,7 @@ export async function updateVersion() {
     type: "confirm",
     name: "confirmation",
     message: `确认修改版本号：${remoteVersion}-->${nextVersion}`,
+    initial: true,
   });
 
   if (response.confirmation) {
