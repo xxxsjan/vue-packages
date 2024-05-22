@@ -13,6 +13,7 @@ export async function gitcheck(cwd) {
     cwd,
     ignore: "node_modules/**",
   });
+
   if (isGitDir.length == 0) {
     spinner.succeed(pc.green(`分析完成! 未发现git项目(${pc.italic(cwd)})`));
     return;
@@ -30,9 +31,15 @@ export async function gitcheck(cwd) {
 
       const stagedList = res.filter((r) => r.staged).map((r) => r.gitDir);
 
+      const modifiedList = res
+        .filter((r) => r.modified && !r.staged)
+        .map((r) => r.gitDir);
       const not_addedList = res
         .filter((r) => r.not_added && !r.staged)
         .map((r) => r.gitDir);
+
+      const changeList = [...new Set([...modifiedList, ...not_addedList])];
+
       const aheadList = res.filter((r) => r.ahead).map((r) => r.gitDir);
 
       spinner.succeed(
@@ -43,23 +50,24 @@ export async function gitcheck(cwd) {
         console.log(
           pc.bgBlue(`🚀 insecure directory（${unsafeDir.length}）: `)
         );
-        unsafeDir.sort().map((m) => console.log(pc.italic(pc.red(m))));
+        unsafeDir.sort().map((m) => yellowItalic(m));
       }
-      if (not_addedList.length > 0) {
-        logTitle(undefined, undefined, undefined, not_addedList.length);
+      // add 之前
+      if (changeList.length > 0) {
+        logTitle(undefined, undefined, undefined, changeList.length);
 
-        not_addedList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
+        changeList.sort().map((m) => yellowItalic(m));
       }
-
+      // commit 之前
       if (stagedList.length > 0) {
         logTitle("add", undefined, undefined, stagedList.length);
 
-        stagedList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
+        stagedList.sort().map((m) => yellowItalic(m));
       }
-
+      // push 之前
       if (aheadList.length > 0) {
         logTitle("add", "commit", undefined, aheadList.length);
-        aheadList.sort().map((m) => console.log(pc.italic(pc.yellow(m))));
+        aheadList.sort().map((m) => yellowItalic(m));
       }
 
       if (
@@ -82,17 +90,17 @@ export async function gitStatus(dirPath) {
   const res = await git
     .status()
     .then((res) => {
+      // console.log(dirPath, res);
       // if (res.staged.length) {
-      //   console.log(dirPath, res);
       // }
       return {
         ahead: res.ahead,
         gitDir: dirPath,
         unsafeDir: false,
 
-        staged: res.staged.length > 0,
-        not_added: res.not_added.length > 0,
-        modified: res.modified.length > 0,
+        staged: res.staged.length > 0, // 暂存更改
+        not_added: res.not_added.length > 0, // 新增文件
+        modified: res.modified.length > 0, // 修改文件
       };
     })
     .catch((err) => {
@@ -129,4 +137,8 @@ function logTitle(add, commit, push, count = 0) {
       )}（${count}）: `
     )
   );
+}
+
+function yellowItalic(text) {
+  console.log(pc.italic(pc.yellow(text)));
 }

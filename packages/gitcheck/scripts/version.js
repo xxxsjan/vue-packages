@@ -1,5 +1,5 @@
 import fs from "fs";
-import path from "path";
+import path, { resolve } from "path";
 import { fileURLToPath } from "url";
 import { inc } from "semver";
 import parseArgs from "minimist";
@@ -11,8 +11,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const argv = parseArgs(process.argv.slice(2));
-
-updateVersion();
 
 function getRemoteVersion() {
   return new Promise((resolve, reject) => {
@@ -37,9 +35,10 @@ export async function updateVersion() {
 
   // "major" | "premajor" | "minor" | "preminor" | "patch" | "prepatch" | "prerelease";
 
-  const nextVersion = argv.beta
-    ? inc(remoteVersion, "prerelease", "beta", "1")
-    : inc(remoteVersion, "patch");
+  // const nextVersion = argv.beta
+  //   ? inc(remoteVersion, "prerelease", "beta", "1")
+  //   : inc(remoteVersion, "patch");
+  const nextVersion = inc(remoteVersion, "prerelease", "beta", "1");
 
   pkgJson.version = nextVersion;
 
@@ -49,7 +48,7 @@ export async function updateVersion() {
     type: "confirm",
     name: "confirmation",
     message: `确认修改版本号：${remoteVersion}-->${nextVersion}`,
-    initial: true,
+    // initial: true,
   });
 
   if (response.confirmation) {
@@ -59,4 +58,5 @@ export async function updateVersion() {
     );
     console.log(pc.green(`✔ Version updated to ${nextVersion}`));
   }
+  return response.confirmation;
 }

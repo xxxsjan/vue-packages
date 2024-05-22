@@ -7,11 +7,14 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "version:beta": "node ./scripts/version.js --beta",
     "publ": "node ./scripts/publish.js"
   },
   "bin": {
     "gitcheck": "./bin/index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [],
   "author": "",

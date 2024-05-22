@@ -1,8 +1,13 @@
 import { spawn } from "child_process";
 import pc from "picocolors";
+import { updateVersion } from "./version.js";
 
 main();
 async function main() {
+  const confirm = await updateVersion();
+  if (!confirm) {
+    return;
+  }
   await spawn_Promise("npm", ["run", "build"], process.cwd());
   console.log(pc.green("✔ 打包成功"));
   await spawn_Promise(
