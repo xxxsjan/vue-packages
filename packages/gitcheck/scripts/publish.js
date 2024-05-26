@@ -49,3 +49,5 @@ function spawn_Promise(command, params, cwd) {
     // spawnObj.on("exit", (code) => {});
   });
 }
+
+// npm unpublish gitcheck-cli@0.0.9-beta.1
