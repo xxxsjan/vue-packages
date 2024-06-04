@@ -6,7 +6,7 @@ import clear from "rollup-plugin-clear";
 
 export default [
   {
-    input: "src/index.ts",
+    input: "packages/ip-input/index.ts",
     output: [
       {
         file: "dist/lib.umd.js",

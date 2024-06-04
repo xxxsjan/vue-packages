@@ -4,13 +4,12 @@ var IpInput = (function (exports, vue) {
   const _hoisted_1 = { class: "ip-input-container" };
   const maxLength = 3;
   var script = /*#__PURE__*/ vue.defineComponent({
-      __name: 'index',
+      __name: 'ip-input',
       props: {
           modelValue: { type: String, required: true }
       },
       emits: ["update:modelValue", "change"],
-      setup(__props, { emit: emits }) {
-          const props = __props;
+      setup(__props, { emit: __emit }) {
           const val0 = vue.ref("");
           const val1 = vue.ref("");
           const val2 = vue.ref("");
@@ -21,6 +20,8 @@ var IpInput = (function (exports, vue) {
           const inputRef2 = vue.ref();
           const inputRef3 = vue.ref();
           const inputRefs = vue.reactive([inputRef0, inputRef1, inputRef2, inputRef3]);
+          const props = __props;
+          const emits = __emit;
           vue.watchEffect(() => {
               const _modelValueList = props.modelValue.split(".");
               val0.value = _modelValueList[0] || "";
@@ -120,7 +121,7 @@ var IpInput = (function (exports, vue) {
       }
   });
 
-  script.__file = "src/index.vue";
+  script.__file = "packages/ip-input/src/ip-input.vue";
 
   function styleInject(css, ref) {
     if ( ref === void 0 ) ref = {};

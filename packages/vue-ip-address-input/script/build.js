@@ -9,7 +9,7 @@ const outfile = path.resolve(__cwd, `./dist/bundle.es.js`);
 /** @type {import('esbuild').BuildOptions} **/
 const options = {
   bundle: true,
-  entryPoints: [path.resolve(__cwd, `./src/index.ts`)],
+  entryPoints: [path.resolve(__cwd, `./packages/ip-input/index.ts`)],
   outfile,
   // entryNames: "[dir]/[name]-[hash]",
   external: ["vue"],

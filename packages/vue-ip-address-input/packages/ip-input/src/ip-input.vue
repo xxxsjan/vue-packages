@@ -37,11 +37,13 @@ watchEffect(() => {
   val2.value = _modelValueList[2] || "";
   val3.value = _modelValueList[3] || "";
 });
+
 function setFocus(index: number) {
   if (inputRefs[index].value) {
     (inputRefs[index].value as HTMLInputElement).focus();
   }
 }
+
 function watchVal(index: number) {
   return function handler(newVal: string, oldVal: string | undefined) {
     const curIdx = Number(index);
@@ -79,6 +81,7 @@ function watchVal(index: number) {
     emits("change", _newVal);
   };
 }
+
 watch(() => val0.value, watchVal(0));
 watch(() => val1.value, watchVal(1));
 watch(() => val2.value, watchVal(2));

@@ -3,13 +3,12 @@ import { defineComponent, ref, reactive, watchEffect, watch, onMounted, openBloc
 const _hoisted_1 = { class: "ip-input-container" };
 const maxLength = 3;
 var script = /*#__PURE__*/ defineComponent({
-    __name: 'index',
+    __name: 'ip-input',
     props: {
         modelValue: { type: String, required: true }
     },
     emits: ["update:modelValue", "change"],
-    setup(__props, { emit: emits }) {
-        const props = __props;
+    setup(__props, { emit: __emit }) {
         const val0 = ref("");
         const val1 = ref("");
         const val2 = ref("");
@@ -20,6 +19,8 @@ var script = /*#__PURE__*/ defineComponent({
         const inputRef2 = ref();
         const inputRef3 = ref();
         const inputRefs = reactive([inputRef0, inputRef1, inputRef2, inputRef3]);
+        const props = __props;
+        const emits = __emit;
         watchEffect(() => {
             const _modelValueList = props.modelValue.split(".");
             val0.value = _modelValueList[0] || "";
@@ -119,7 +120,7 @@ var script = /*#__PURE__*/ defineComponent({
     }
 });
 
-script.__file = "src/index.vue";
+script.__file = "packages/ip-input/src/ip-input.vue";
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};

@@ -1,6 +1,6 @@
 import { App, Plugin } from "vue";
-import IpInput from "./index.vue";
-import "./index.scss";
+import IpInput from "./src/ip-input.vue";
+import "./style/index.scss";
 
 export type ComponentWithInstall<T> = T & Plugin;
 export function withInstall<T>(comp: T) {
