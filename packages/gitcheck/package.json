@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "rollup -w -c",
+    "start": "node lib.index.js",
     "build": "rollup -c",
     "publ": "node ./scripts/publish.js"
   },
