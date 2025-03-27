@@ -22,6 +22,7 @@ function getRemoteVersion() {
         reject(stderr);
       }
       const version = stdout.trim();
+      console.log("remote 版本: ", version);
       resolve(version);
     });
   });
@@ -38,7 +39,8 @@ export async function updateVersion() {
   // const nextVersion = argv.beta
   //   ? inc(remoteVersion, "prerelease", "beta", "1")
   //   : inc(remoteVersion, "patch");
-  const nextVersion = inc(remoteVersion, "prerelease", "beta", "1");
+  // 0.0.9-beta.1 → 0.0.9-beta.5 → 0.0.9-rc.1 → 0.0.9 → 0.0.10
+  const nextVersion = inc(remoteVersion, "patch");
 
   pkgJson.version = nextVersion;
 
