@@ -1,7 +1,7 @@
 {
-  "name": "gt-cli",
+  "name": "gitpromax",
   "version": "0.0.1",
-  "description": "git tool cli增强工具",
+  "description": "git增效命令行工具",
   "main": "index.js",
   "type": "module",
   "scripts": {

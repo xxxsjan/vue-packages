@@ -1,6 +1,6 @@
-# gt-cli
+# gitpromax
 
-🔍 git tool cli
+🔍 git增效命令行工具
 
 ## 功能特性 / Features
 
@@ -23,7 +23,7 @@
 ## 安装说明
 
 ```bash
-npm install -g gt-cli
+npm install -g gittool
 ```
 
 ## 技术细节
