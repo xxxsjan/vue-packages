@@ -1,6 +1,6 @@
 {
   "name": "gitpromax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "git增效命令行工具",
   "main": "index.js",
   "type": "module",

@@ -23,7 +23,7 @@
 ## 安装说明
 
 ```bash
-npm install -g gittool
+npm install -g gitpromax
 ```
 
 ## 技术细节

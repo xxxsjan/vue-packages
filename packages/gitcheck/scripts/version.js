@@ -12,9 +12,9 @@ const __dirname = path.dirname(__filename);
 
 const argv = parseArgs(process.argv.slice(2));
 
-function getRemoteVersion() {
+function getRemoteVersion(name) {
   return new Promise((resolve, reject) => {
-    exec(`npm show gitcheck-cli version`, (error, stdout, stderr) => {
+    exec(`npm show ${name} version`, (error, stdout, stderr) => {
       if (error) {
         reject(error);
       }
@@ -32,7 +32,7 @@ export async function updateVersion() {
   const pkgData = fs.readFileSync(path.resolve(__dirname, "../package.json"));
   const pkgJson = JSON.parse(pkgData);
 
-  const remoteVersion = await getRemoteVersion();
+  const remoteVersion = await getRemoteVersion(pkgJson.name);
 
   // "major" | "premajor" | "minor" | "preminor" | "patch" | "prepatch" | "prerelease";
 

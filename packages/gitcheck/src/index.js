@@ -16,7 +16,7 @@ cli
     default: ".",
   })
   .option("-r, --retry <number>", "Retry attempts count", {
-    default: 1, // 默认重试次数
+    default: 10, // 默认重试次数
   })
   .action((dir, options) => {
     const targetDir = dir || options.dir;
