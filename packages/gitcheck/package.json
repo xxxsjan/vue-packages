@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "rollup -w -c",
-    "start": "node lib.index.js",
     "build": "rollup -c",
+    "start:lib": "bun lib.index.js",
     "publ": "node ./scripts/publish.js"
   },
   "bin": {
