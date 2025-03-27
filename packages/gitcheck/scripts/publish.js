@@ -1,9 +1,23 @@
 import { spawn } from "child_process";
 import pc from "picocolors";
 import { updateVersion } from "./version.js";
-
+// 登录账号 npm adduser --registry https://registry.npmjs.org
 main();
 async function main() {
+  try {
+    const user = await spawn_Promise(
+      "npm",
+      ["whoami", "--registry", "https://registry.npmjs.org"],
+      process.cwd()
+    );
+    console.log(pc.cyan(`✔ 当前登录用户: ${user.trim()}`));
+  } catch (err) {
+    console.log(pc.red("✖ 未检测到npm登录状态"));
+    console.log(
+      pc.yellow("请先执行：npm login --registry=https://registry.npmjs.org")
+    );
+    return;
+  }
   const confirm = await updateVersion();
   if (!confirm) {
     return;
@@ -42,7 +56,7 @@ function spawn_Promise(command, params, cwd) {
         resolve(stdout);
       } else {
         if (stderr) {
-          reject(stderr);
+          reject(stderr || "Command failed without error message");
         }
       }
     });
