@@ -1,7 +1,8 @@
 import { spawn } from "child_process";
 import pc from "picocolors";
 import { updateVersion } from "./version.js";
-// 登录账号 npm adduser --registry https://registry.npmjs.org
+// 登录账号 npm login --registry https://registry.npmjs.org
+// npm publish --registry=https://registry.npmjs.org
 main();
 async function main() {
   try {

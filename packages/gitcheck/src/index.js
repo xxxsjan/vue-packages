@@ -10,26 +10,33 @@ cli.help();
 
 cli.version(version);
 
-cli.option("-d ,--dir <dir>", "Parse folder", {
-  default: ".",
-});
-
 cli
-  .command("gp <dir>", "Remove a dir")
-  .option("-gp, --gitpush <dir>", "Execute git push with retry", {
+  .command("push [dir]", "git push with retry")
+  .option("-d, --dir <dir>", "Execute git push with retry", {
     default: ".",
   })
   .option("-r, --retry <number>", "Retry attempts count", {
-    default: 3, // 设置默认重试次数
+    default: 1, // 默认重试次数
   })
   .action((dir, options) => {
-    const dirPath = path.resolve(dir);
+    const targetDir = dir || options.dir;
+    const dirPath = path.resolve(targetDir);
     gitPushWithRetry(dirPath, options.retry);
   });
 
+cli
+  .command("check [dir]", "Check git repo")
+  .option("-d ,--dir <dir>", "Parse folder", {
+    default: ".",
+  })
+  .action((dir, options) => {
+    const targetDir = dir || options.dir;
+    const dirPath = path.resolve(targetDir);
+    gitcheck(dirPath);
+  });
+
 cli.command("[...files]", "files").action((files, options) => {
-  const dirPath = path.resolve(options.dir);
-  gitcheck(dirPath);
+  gitcheck(process.cwd());
 });
 
 const parsed = cli.parse();

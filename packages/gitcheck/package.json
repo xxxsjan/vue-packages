@@ -1,7 +1,7 @@
 {
-  "name": "gitcheck-cli",
-  "version": "0.0.10",
-  "description": "检查目录下所有git仓库的提交状态",
+  "name": "gt-cli",
+  "version": "0.0.1",
+  "description": "git tool cli增强工具",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "publ": "node ./scripts/publish.js"
   },
   "bin": {
-    "gitcheck": "./bin/index.js"
+    "gt": "./bin/index.js"
   },
   "publishConfig": {
     "access": "public",
